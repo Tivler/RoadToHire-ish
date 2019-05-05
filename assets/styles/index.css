@@ -28,7 +28,8 @@ main {
 
 .background-image {
     background: url('../images/hero-image.jpg');
-    height: 750px;
+    /* height: 750px; */
+    height: 65vh;
     width: 100%;
     background-position: bottom;
     background-size: cover;
@@ -189,7 +190,7 @@ main {
 .main_header {
     width: 40%;
     position: absolute;
-    top: 400px;
+    top: 450px;
     left: 50%;
     transform: translate(-50% , -50%);
 }
@@ -238,7 +239,6 @@ main {
 .button {
     margin-top: 25px;
     color: #fff;
-    width: 20%;
     border: 1px solid #fff;
     line-height: 1px;
     font-size: 16px;
@@ -265,7 +265,7 @@ main {
 
 .section_one-wrapper {
     background-color: #fff;
-    margin: 3% 12%;
+    margin: 3% 17%;
     margin-bottom: 7%;
 }
 
@@ -277,7 +277,7 @@ main {
 
 .article_post {
     display: inline-block;
-    width: 25%;
+    width: 400px;
     height: 400px;
     margin-bottom: -140px;
     text-align: center;
@@ -350,8 +350,29 @@ main {
     background-repeat: no-repeat;
 }
 
-.article_post:last-child {
+.article_post:nth-child(9) {
     background: url('../images/post-image9.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.article_post:nth-child(10) {
+    background: url('../images/post-image10.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.article_post:nth-child(11) {
+    background: url('../images/post-image11.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.article_post:last-child {
+    background: url('../images/post-image12.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -386,7 +407,6 @@ main {
 }
 
 .article_post:hover .post_overlay {
-    
     display: flex;
     align-items:center; 
     padding: 12% 10%;
@@ -398,7 +418,7 @@ main {
     line-height: 1em;
     font-size: 13px;
     text-decoration: none;
-    padding: 12px 145px 7px;
+    padding: 12px 100px 7px;
     transition: .3s;
 }
 
@@ -421,6 +441,9 @@ main {
     border-bottom: 20px solid #e26f6f;
 }
 
+.video {
+    height: 650px;
+}
 
 .video_overlay {
     height: 650px;

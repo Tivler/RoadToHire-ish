@@ -15,7 +15,6 @@ function navEffect () {
     window.addEventListener('scroll' , function() {
         if(window.scrollY >= 541.8181762695312) {
             nav.classList.add('blue');
-            console.log(scrollY);
         } else {
             nav.classList.remove('blue');
         }
