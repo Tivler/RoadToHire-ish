@@ -4,17 +4,18 @@ function animateCss (item , action , delay) {
 }
 
 animateCss(".main_nav" , "bounceInDown" );
-animateCss(".main_header--title", "bounceInUp");
-animateCss('.header--description' , "bounceInUp");
-animateCss('.button' , "bounceInUp");
+animateCss(".main_header--title", "bounceInDown");
+animateCss('.header--description' , "bounceInDown");
+animateCss('.button' , "bounceInDown");
 
 
 function navEffect () {
     const nav = document.querySelector('.main_nav');
 
     window.addEventListener('scroll' , function() {
-        if(window.scrollY) {
+        if(window.scrollY >= 541.8181762695312) {
             nav.classList.add('blue');
+            console.log(scrollY);
         } else {
             nav.classList.remove('blue');
         }

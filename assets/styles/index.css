@@ -26,7 +26,6 @@ body {
 
 main {
     overflow: auto;
-    padding-bottom: 90px;
 }
 
 /* Hero Image Styles ---------------- */
@@ -54,7 +53,7 @@ main {
     width: 100%;
     background-color: transparent;
     z-index: 2000;
-    transition: .3s;
+    transition: .4s;
 }
 
 .main_nav.blue {
@@ -158,7 +157,7 @@ main {
     width: 40vw;
     text-align: center;
     line-height: 35px;
-    animation-delay: .3s;
+    animation-delay: .7s;
 }
 
 .main_header--title::after {
@@ -205,7 +204,7 @@ main {
     border: none;
     border-radius: 60px;
     filter: drop-shadow( 0px 2px 1px #999);
-    animation-delay: .7s;
+    animation-delay: .3s;
 }
 
 .icon {
@@ -216,9 +215,9 @@ main {
 /* section one styles ---------------- */
 
 .section-one-wrapper {
-    height: 2000px;
     background-color: #fff;
     margin: 3% 12%;
+    margin-bottom: 7%;
 }
 
 .section_one--title {
@@ -326,6 +325,95 @@ main {
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+
+/* Section Two Styles  ---------------- */
+
+.section-two-wrapper {
+    margin-bottom: 12%;
+}
+
+.vid-content-wrapper {
+    height: 650px;
+    display: flex;
+    margin-top: 8px;
+}
+
+.vid-content {
+    height: 650px;
+    background-color: #2d3240;
+}
+
+.video-overlay {
+    height: 650px;
+    width: 1155.550px;
+    position: absolute;
+    background: -webkit-radial-gradient(50% 55%, ellipse closest-corner, rgba(75, 101, 121, 0.42) 1%, rgba(0, 17, 39, 0.6) 100%);
+}
+
+.link-wrapper {
+    height: 650px;
+    width: 1155.550px;
+    position: absolute;
+}
+
+.journey {
+    font-family: "Cambay";
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 3em;
+    text-shadow: -2px 2px 1px #777;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 99;
+}
+
+.video {
+    height: 650px;
+}
+
+.content-right {
+    background-color: #2d3240;
+    padding: 150px 100px;
+}
+
+.content-paragraph {
+    font-size: 1em;
+    opacity: 0.7;
+    width: 57%;
+    margin-bottom: 200px;
+}
+
+.content-heading {
+    margin-bottom: 30px;
+}
+
+.content-button {
+    color: #fff;
+    border: 1px solid #fff;
+    line-height: 1em;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 12px 12px 7px;
+    transition: .3s;
+}
+
+.content-button:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+
+/* Section Three Styles  ---------------- */
+
+.section-three-wrapper {
+    height: 300px;
+    background-color: #00a8b3;
 }
 
 /* Footer and Social Icon Styles  ---------------- */
