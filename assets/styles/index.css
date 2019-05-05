@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Raleway:900');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@import url('https://fonts.googleapis.com/css?family=Cambay:400,700');
+
+/* Universal and Body Styles ---------------- */
 
 * {
     margin: 0;
@@ -9,32 +13,47 @@
 }
 
 body {
-    font-family: "Open sans" , sans-serif;
+    font-family: "Cambay" , sans-serif;
     height: 4000px;
 }
 
+
+
+/* Hero Image Styles ---------------- */
+
 .background-image {
     background: url('../images/image9.jpg');
-    height: 100vh;
+    height: 750px;
     width: 100%;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+
+
+
+/* Nav and logo wrapper styles---------------- */
 
 .main_nav {
     position: fixed;
     top: 0;
     color: #fff;
-    font-family:'Raleway', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;
-    height: 68px;
+    height: 100px;
     width: 100%;
     background-color: transparent;
     z-index: 2000;
+    transition: .3s;
 }
 
+.main_nav.blue {
+    background-color: rgba(35, 40, 55, 0.95);
+    height: 100px;
+} 
+
 .logo_wrapper {
-    height: 68px;
+    height: 100px;
     margin-left: 15%;
     display: flex;
 }
@@ -49,6 +68,7 @@ body {
 }
 
 .nav_logo--text {
+    font-weight: 400;
     display: inline;
     font-size: 1.5em;
     font-weight: bold;
@@ -56,11 +76,13 @@ body {
     line-height: 1.5;
     align-self: center;
     text-shadow: -2px 2px 1px #777;
+    transition: .3s;
 }
+
 
 .nav_list--wrapper {
     position: fixed;
-    height: 68px;
+    height: 100px;
     width: 100%;
     top: 0;
     right: 0;
@@ -68,25 +90,30 @@ body {
 }
 
 .main_nav--list {
-    height: 68px;
+    height: 100px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     float: right;
     font-size: .95em;
 }
 
 .main_nav--list li {
+    align-items: center;
     list-style-type: none;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 
 .nav_list--item {
     font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
     color: #fff;
     text-decoration: none;
     text-shadow: -2px 2px 2px #777;
+    transition: .3s
 }
+
+
 
 .home {
     padding-right: 40px;
@@ -96,43 +123,84 @@ body {
     padding-right: 40px;
 }
 
-.eats {
+.food {
     padding-right: 40px;
 }
 
 
+
+
+/* Main Hero Wrapper and Heading Styles ---------------- */
+
 .main_header {
+    width: 40%;
     position: absolute;
-    top: 50%;
+    top: 362.5px;
     left: 50%;
     transform: translate(-50% , -50%);
 }
 
 .main_header--title {
-    font-family: "Zeyada";
-    font-size: 14em;
+    font-family: "Cambay";
+    font-size: 8em;
     font-weight: 800;
+    letter-spacing: -5px;
     color: #fff;
     text-shadow: -2px 2px 2px #000;
-    margin-bottom: 40px;
+    width: 40vw;
+    text-align: center;
+    line-height: 35px;
+    animation-delay: .3s;
 }
 
+.main_header--title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color:#e26f6f;
+    z-index: -1;
+}
 
-.button_wrapper {
+.header--description {
+    font-family: "Quicksand";
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.275em;
+    text-align: center;
+    line-height: 1.5em;
+    letter-spacing: 3px;
+    text-shadow: -2px 2px 2px #555;
+    margin-top: 3.5em;
+    animation-delay: .5s;
+}
+
+.button-wrapper {
     display: flex;
     justify-content: center;
 }
 
-.header_button {
-    width: 100%;
-    display: block;
-    font-weight: 800;
-    font-size: 20px;
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    padding: 15px;
-    background-color:indianred;
+.button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 25px;
+    width: 225px;
+    padding: 20px 22px;
+    font-size: 15px;
+    letter-spacing: 1.25px;
     color: #fff;
-    border: 1px solid indianred;
-    border-radius: 5px;
+    text-shadow: -1px 1px 2px #444;
+    background-color:#e26f6f; 
+    border: none;
+    border-radius: 60px;
+    filter: drop-shadow( 0px 2px 1px #999);
+    animation-delay: .7s;
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 20px;
 }
