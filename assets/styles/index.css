@@ -81,7 +81,7 @@ main {
     width: 100%;
     background-color: transparent;
     z-index: 2000;
-    transition: .4s;
+    transition: .35s;
 }
 
 .main_nav.blue {
@@ -91,7 +91,7 @@ main {
 
 .logo_wrapper {
     height: 90px;
-    margin-left: 15%;
+    margin-left: 10%;
     display: flex;
 }
 
@@ -117,13 +117,20 @@ main {
 }
 
 
+.logo_text-span {
+    align-self: center;
+    font-weight: initial;
+    font-size: .55em;
+}
+
+
 .nav_list-wrapper {
     position: fixed;
     height: 90px;
     width: 100%;
     top: 0;
     right: 0;
-    margin-right: 15%;
+    margin-right: 10%;
 }
 
 .main_nav-list {
@@ -148,6 +155,15 @@ main {
     transition: .3s
 }
 
+.nav_list-item  {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: -2px 2px 2px #777;
+    transition: .3s
+}
+
 .home {
     padding-right: 40px;
 }
@@ -160,6 +176,9 @@ main {
     padding-right: 40px;
 }
 
+.contact {
+    padding-right: 40px;
+}
 
 
 
@@ -205,7 +224,7 @@ main {
     font-size: 1.275em;
     text-align: center;
     line-height: 1.5em;
-    letter-spacing: 3px;
+    letter-spacing: 2.275px;
     text-shadow: -2px 2px 2px #555;
     margin-top: 3.5em;
     animation-delay: .5s;
@@ -227,6 +246,7 @@ main {
     padding: 28px 40px 25px;
     transition: .3s;
     text-align: center;
+    border-radius: 3px;
 }
 
 .button:hover {
@@ -398,7 +418,7 @@ main {
 .video_content-wrapper {
     height: 650px;
     display: flex;
-    margin-top: 8px;
+    border-bottom: 20px solid #e26f6f;
 }
 
 
@@ -464,6 +484,7 @@ main {
     text-decoration: none;
     padding: 12px 50px 7px;
     transition: .3s;
+    border-radius: 5px;
 }
 
 .content_button:hover {
