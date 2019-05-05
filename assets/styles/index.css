@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:900');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 @import url('https://fonts.googleapis.com/css?family=Cambay:400,700');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400i');
 
 /* Universal and Body Styles ---------------- */
 
@@ -31,7 +32,7 @@ main {
 /* Hero Image Styles ---------------- */
 
 .background-image {
-    background: url('../images/image9.jpg');
+    background: url('../images/hero-image.jpg');
     height: 750px;
     width: 100%;
     background-position: bottom;
@@ -199,7 +200,7 @@ main {
     font-size: 15px;
     letter-spacing: 1.25px;
     color: #fff;
-    text-shadow: -1px 1px 2px #444;
+    text-shadow: -1px 1px 2px #555;
     background-color:#e26f6f; 
     border: none;
     border-radius: 60px;
@@ -212,10 +213,119 @@ main {
     font-size: 22px;
 }
 
-.divider {
+/* section one styles ---------------- */
+
+.section-one-wrapper {
     height: 2000px;
-    width: 100%;;
-    background-color: #fff;;
+    background-color: #fff;
+    margin: 3% 12%;
+}
+
+.section_one--title {
+    text-align: center;
+    color: #f97c80;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section_one--title::after {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    content: "";
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: #f97c80;
+}
+
+.section_one--subtext {
+    font-family: "Crimson text";
+    font-size: 16px;
+    line-height: 1.4;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.article-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article-post {
+    display: inline-block;
+    width: 25%;
+    height: 400px;
+    margin-bottom: -140px;
+    text-align: center;
+    background-color: #299fb3;
+    margin: 8px 8px;
+    box-shadow: -2px 2px 40px 0 rgba(0, 0, 0, 0.18);
+}
+
+.article-post:first-child {
+    background: url('../images/post-image1.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.article-post:nth-child(2) {
+    background: url('../images/post-image2.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.article-post:nth-child(3) {
+    background: url('../images/post-image3.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.article-post:nth-child(4) {
+    background: url('../images/post-image4.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.article-post:nth-child(5) {
+    background: url('../images/post-image5.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.article-post:nth-child(6) {
+    background: url('../images/post-image6.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.article-post:nth-child(7) {
+    background: url('../images/post-image7.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.article-post:nth-child(8) {
+    background: url('../images/post-image8.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.article-post:last-child {
+    background: url('../images/post-image9.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* Footer and Social Icon Styles  ---------------- */
