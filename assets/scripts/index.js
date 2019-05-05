@@ -4,8 +4,8 @@ function animateCss (item , action , delay) {
 }
 
 animateCss(".main_nav" , "bounceInDown" );
-animateCss(".main_header--title", "bounceInDown");
-animateCss('.header--description' , "bounceInDown");
+animateCss(".header_title", "bounceInDown");
+animateCss('.header_description' , "bounceInDown");
 animateCss('.button' , "bounceInDown");
 
 

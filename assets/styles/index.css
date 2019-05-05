@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Zeyada');
-@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Raleway:900');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 @import url('https://fonts.googleapis.com/css?family=Cambay:400,700');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400i');
@@ -40,6 +36,38 @@ main {
     background-attachment: fixed;
 }
 
+/* Section Divider Tags Styles ---------------- */
+
+.section_title {
+    text-align: center;
+    color: #f97c80;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section_title::after {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    content: "";
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: #f97c80;
+}
+
+.section_subtext {
+    font-family: "Crimson text";
+    font-size: 16px;
+    line-height: 1.4;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+
 
 
 
@@ -67,7 +95,7 @@ main {
     display: flex;
 }
 
-.nav_logo--image {
+.logo_image {
     height: 39px;
     width: 39px;
     border-radius: 100%;
@@ -76,7 +104,7 @@ main {
     filter: drop-shadow(-1px 1px 1px #777);
 }
 
-.nav_logo--text {
+.logo_text {
     font-weight: 400;
     display: inline;
     font-size: 1.5em;
@@ -89,7 +117,7 @@ main {
 }
 
 
-.nav_list--wrapper {
+.nav_list-wrapper {
     position: fixed;
     height: 90px;
     width: 100%;
@@ -98,7 +126,7 @@ main {
     margin-right: 15%;
 }
 
-.main_nav--list {
+.main_nav-list {
     height: 90px;
     display: flex;
     align-items: center;
@@ -106,13 +134,12 @@ main {
     font-size: .95em;
 }
 
-.main_nav--list li {
+.main_nav-list li {
     align-items: center;
     list-style-type: none;
-    text-transform: uppercase;
 }
 
-.nav_list--item {
+.nav_list-item {
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -137,6 +164,8 @@ main {
 
 
 
+
+
 /* Main Hero Wrapper and Heading Styles ---------------- */
 
 .main_header {
@@ -147,7 +176,7 @@ main {
     transform: translate(-50% , -50%);
 }
 
-.main_header--title {
+.header_title {
     font-family: "Cambay";
     font-size: 8em;
     font-weight: 800;
@@ -160,7 +189,7 @@ main {
     animation-delay: .7s;
 }
 
-.main_header--title::after {
+.header_title::after {
     content: "";
     display: block;
     position: absolute;
@@ -170,7 +199,7 @@ main {
     z-index: -1;
 }
 
-.header--description {
+.header_description {
     font-family: "Quicksand";
     font-weight: 700;
     color: #fff;
@@ -183,7 +212,7 @@ main {
     animation-delay: .5s;
 }
 
-.button-wrapper {
+.button_wrapper {
     display: flex;
     justify-content: center;
 }
@@ -212,48 +241,26 @@ main {
     font-size: 22px;
 }
 
+
+
+
+
+
 /* section one styles ---------------- */
 
-.section-one-wrapper {
+.section_one-wrapper {
     background-color: #fff;
     margin: 3% 12%;
     margin-bottom: 7%;
 }
 
-.section_one--title {
-    text-align: center;
-    color: #f97c80;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-
-.section_one--title::after {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    content: "";
-    display: block;
-    height: 3px;
-    width: 30px;
-    background-color: #f97c80;
-}
-
-.section_one--subtext {
-    font-family: "Crimson text";
-    font-size: 16px;
-    line-height: 1.4;
-    color: #555;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.article-wrapper {
+.article_wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.article-post {
+.article_post {
     display: inline-block;
     width: 25%;
     height: 400px;
@@ -264,63 +271,63 @@ main {
     box-shadow: -2px 2px 40px 0 rgba(0, 0, 0, 0.18);
 }
 
-.article-post:first-child {
+.article_post:first-child {
     background: url('../images/post-image1.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.article-post:nth-child(2) {
+.article_post:nth-child(2) {
     background: url('../images/post-image2.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.article-post:nth-child(3) {
+.article_post:nth-child(3) {
     background: url('../images/post-image3.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.article-post:nth-child(4) {
+.article_post:nth-child(4) {
     background: url('../images/post-image4.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.article-post:nth-child(5) {
+.article_post:nth-child(5) {
     background: url('../images/post-image5.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.article-post:nth-child(6) {
+.article_post:nth-child(6) {
     background: url('../images/post-image6.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.article-post:nth-child(7) {
+.article_post:nth-child(7) {
     background: url('../images/post-image7.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.article-post:nth-child(8) {
+.article_post:nth-child(8) {
     background: url('../images/post-image8.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.article-post:last-child {
+.article_post:last-child {
     background: url('../images/post-image9.jpg');
     background-position: bottom;
     background-size: cover;
@@ -328,37 +335,38 @@ main {
 }
 
 
+
+
+
+
+
 /* Section Two Styles  ---------------- */
 
-.section-two-wrapper {
-    margin-bottom: 12%;
+.section_two-wrapper {
+    margin-bottom: 7%;
 }
 
-.vid-content-wrapper {
+.video_content-wrapper {
     height: 650px;
     display: flex;
     margin-top: 8px;
 }
 
-.vid-content {
-    height: 650px;
-    background-color: #2d3240;
-}
 
-.video-overlay {
+.video_overlay {
     height: 650px;
     width: 1155.550px;
     position: absolute;
     background: -webkit-radial-gradient(50% 55%, ellipse closest-corner, rgba(75, 101, 121, 0.42) 1%, rgba(0, 17, 39, 0.6) 100%);
 }
 
-.link-wrapper {
+.video_link-wrapper {
     height: 650px;
     width: 1155.550px;
     position: absolute;
 }
 
-.journey {
+.video_link {
     font-family: "Cambay";
     font-weight: 800;
     letter-spacing: 1px;
@@ -373,27 +381,32 @@ main {
     z-index: 99;
 }
 
-.video {
-    height: 650px;
-}
 
-.content-right {
+.content_right {
     background-color: #2d3240;
-    padding: 150px 100px;
+    padding: 95px 100px;
 }
 
-.content-paragraph {
+.content_paragraph {
     font-size: 1em;
     opacity: 0.7;
     width: 57%;
-    margin-bottom: 200px;
+    margin-bottom: 40px;
 }
 
-.content-heading {
+.content_heading {
     margin-bottom: 30px;
 }
 
-.content-button {
+.content_logo {
+    height: 125px;
+    width: 125px;
+    border-radius: 6px;
+    filter: drop-shadow(-1px 1px 1px #777);
+    margin-bottom: 40px;
+}
+
+.content_button {
     color: #fff;
     border: 1px solid #fff;
     line-height: 1em;
@@ -403,18 +416,50 @@ main {
     transition: .3s;
 }
 
-.content-button:hover {
+.content_button:hover {
     color: #000;
     background-color: #fff;
 }
 
 
+
+
+
+
+
 /* Section Three Styles  ---------------- */
 
-.section-three-wrapper {
-    height: 300px;
+.section_three-wrapper {
     background-color: #00a8b3;
+    display: flex;
+    justify-content: center;
+    padding: 4% 25%;
+    margin-top: 40px;
 }
+
+.fun_fact-wrapper {
+    text-align: center;
+}
+
+.fun_fact-wrapper:nth-child(2) {
+    padding: 0px 12%;
+}
+
+
+.fun_fact-heading {
+    font-size: 3em;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+}
+
+.fun_fact-subtext {
+    text-align: center;
+}
+
+
+
+
+
 
 /* Footer and Social Icon Styles  ---------------- */
 
@@ -447,14 +492,14 @@ main {
     justify-content: center;
 }
 
-.footer-icon {
+.footer_icon {
     margin-top: 10px;
     color: #299fb3; 
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .fa-instagram {
-    padding: 0 5px;
+    padding: 0 7px;
 }
 
 .copyright {
