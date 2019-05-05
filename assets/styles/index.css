@@ -12,12 +12,21 @@
     padding: 0;
 }
 
-body {
-    font-family: "Cambay" , sans-serif;
-    height: 4000px;
+html {
+    height: 100%;;
 }
 
+body {
+    font-family: "Cambay" , sans-serif;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+}
 
+main {
+    overflow: auto;
+    padding-bottom: 90px;
+}
 
 /* Hero Image Styles ---------------- */
 
@@ -40,7 +49,7 @@ body {
     position: fixed;
     top: 0;
     color: #fff;
-    height: 100px;
+    height: 90px;
     width: 100%;
     background-color: transparent;
     z-index: 2000;
@@ -49,11 +58,11 @@ body {
 
 .main_nav.blue {
     background-color: rgba(35, 40, 55, 0.95);
-    height: 100px;
+    height: 90px;
 } 
 
 .logo_wrapper {
-    height: 100px;
+    height: 90px;
     margin-left: 15%;
     display: flex;
 }
@@ -82,7 +91,7 @@ body {
 
 .nav_list--wrapper {
     position: fixed;
-    height: 100px;
+    height: 90px;
     width: 100%;
     top: 0;
     right: 0;
@@ -90,7 +99,7 @@ body {
 }
 
 .main_nav--list {
-    height: 100px;
+    height: 90px;
     display: flex;
     align-items: center;
     float: right;
@@ -113,8 +122,6 @@ body {
     transition: .3s
 }
 
-
-
 .home {
     padding-right: 40px;
 }
@@ -135,7 +142,7 @@ body {
 .main_header {
     width: 40%;
     position: absolute;
-    top: 362.5px;
+    top: 400px;
     left: 50%;
     transform: translate(-50% , -50%);
 }
@@ -202,5 +209,58 @@ body {
 
 .icon {
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 22px;
+}
+
+.divider {
+    height: 2000px;
+    width: 100%;;
+    background-color: #fff;;
+}
+
+/* Footer and Social Icon Styles  ---------------- */
+
+.main_footer {
+    position: relative;
+    width: 100%;
+    background-color: #2d3240;
+    color: #fff;
+    padding: 2% 0;
+}
+
+.footer_nav { 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer_nav--list {
+    list-style: none;
+}
+
+.footer_nav--item {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer_icon--list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icon {
+    margin-top: 10px;
+    color: #299fb3; 
+    font-size: 1.2em;
+}
+
+.fa-instagram {
+    padding: 0 5px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 75%;
+    opacity: 0.7;
 }
