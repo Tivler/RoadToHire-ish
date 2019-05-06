@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@import url('https://fonts.googleapis.com/css?family=Cambay:400,700');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:900');
+
+/* Universal and Body Styles ---------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    ;
+}
+
+body {
+    font-family: "Cambay", sans-serif;
+    color: #767676;
+    height: 100%;
+    width: 100%;
+}
+
+
+main {
+    overflow: auto;
+}
+
+.backsplash {
+    height: 17vh;
+    background-color: rgba(241, 237, 237, .6);
+}
+
+.content_wrapper {
+    height: 1250px;
+}
+
+
+/* Nav and logo wrapper styles---------------- */
+
+.main_nav {
+    position: fixed;
+    top: 0;
+    color: #fff;
+    height: 90px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 2000;
+    transition: .35s;
+    background-color: rgba(35, 40, 55, 0.95);
+}
+
+.logo_wrapper {
+    height: 90px;
+    margin-left: 10%;
+    display: flex;
+}
+
+.logo_image {
+    height: 39px;
+    width: 39px;
+    border-radius: 100%;
+    align-self: center;
+    margin-right: 15px;
+    filter: drop-shadow(-1px 1px 1px #777);
+}
+
+.logo_text {
+    font-weight: 400;
+    display: inline;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+    line-height: 1.5;
+    align-self: center;
+    text-shadow: -2px 2px 1px #777;
+    transition: .3s;
+}
+
+
+.logo_text-span {
+    align-self: center;
+    font-weight: initial;
+    font-size: .55em;
+}
+
+
+.nav_list-wrapper {
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    margin-right: 10%;
+}
+
+.main_nav-list {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    float: right;
+    font-size: .95em;
+}
+
+.main_nav-list li {
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav_list-item {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: -2px 2px 2px #777;
+    transition: .3s
+}
+
+.nav_list-item {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: -2px 2px 2px #777;
+    transition: .3s
+}
+
+.home {
+    padding-right: 40px;
+}
+
+.explore {
+    padding-right: 40px;
+}
+
+.food {
+    padding-right: 40px;
+}
+
+.contact {
+    padding-right: 40px;
+}
+
+
+
+/* Main Hero Wrapper and Heading Styles ---------------- */
+
+.main_header {
+    width: 85%;
+    position: absolute;
+    top: 310px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header_title {
+    font-family: "Cambay";
+    font-size: 3.8em;
+    font-weight: 600;
+    letter-spacing: .5px;
+    color: #484141;
+    width: 85vw;
+    text-align: center;
+    line-height: 35px;
+    animation-delay: .7s;
+}
+
+.header_title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(100, 100, 100, 0.2);
+    z-index: -1;
+}
+
+.header_description {
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-weight: 900;
+    color: #e26f6f;
+    font-size: 1.275em;
+    text-align: center;
+    letter-spacing: .07px;
+    margin-top: .65em;
+    animation-delay: .5s;
+}
+
+/* Form Styles  ---------------- */
+.form_wrap {
+    position: absolute;
+    top: 875px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: -2px 2px 40px 0 rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 100px 100px 110px 100px;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.form-logo {
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+}
+
+.form-title {
+    text-transform: uppercase;
+    font-family: "Roboto";
+    color: #484141;
+    margin-top: 2px;
+}
+
+.form_control {
+    position: relative;
+    height: auto;
+    padding: 20px 15px;
+    font-size: 15px;
+    background-color: #f9f9f7;
+    border: 1px solid #c7c7c7;
+}
+
+.form_control:focus {
+    outline: none;
+}
+
+#inputFirstName {
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+#inputLastName {
+    margin-bottom: 15px;
+}
+
+#inputPhoneNumber {
+    margin-bottom: 15px;
+}
+
+#inputEmail {
+    margin-bottom: 25px;
+}
+
+#inputMessage {
+    margin-bottom: 35px;
+    font-size: 13px;
+    resize: none;
+}
+
+.form_button {
+    width: 100%;
+    margin: 0 auto;
+    color: #484141;
+    font-size: 14px;
+    padding: 28px 40px 25px;
+    transition: .3s;
+    text-align: center;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.form_button:hover {
+    color: #fff;
+    background-color: #00a8b3;
+    border: 1px solid #00a8b3;
+}
+
+.form_copyright {
+    margin-top: 40px;
+}
+
+
+
+/* Section Three Styles  ---------------- */
+
+.section_three-wrapper {
+    color: #fff;
+    background-color: #00a8b3;
+    display: flex;
+    justify-content: center;
+    padding: 4% 25%;
+    margin-top: 40px;
+}
+
+.fun_fact-wrapper {
+    text-align: center;
+}
+
+.fun_fact-wrapper:nth-child(2) {
+    padding: 0px 12%;
+}
+
+
+.fun_fact-heading {
+    font-size: 3em;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+}
+
+.fun_fact-subtext {
+    text-align: center;
+}
+
+
+
+
+/* Footer and Social Icon Styles  ---------------- */
+
+.main_footer {
+    position: relative;
+    width: 100%;
+    background-color: #2d3240;
+    color: #fff;
+    padding: 2% 0;
+}
+
+.footer_nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer_nav--list {
+    list-style: none;
+}
+
+.footer_nav--item {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer_icon--list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_icon {
+    margin-top: 10px;
+    color: #299fb3;
+    font-size: 1.5em;
+}
+
+.fa-instagram {
+    padding: 0 7px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 75%;
+}
