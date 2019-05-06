@@ -1,6 +1,6 @@
-function animateCss(item, action, delay) {
+function animateCss(item, action) {
     const element = document.querySelector(item);
-    element.classList.add('animated', action, delay);
+    element.classList.add('animated', action);
 }
 
 animateCss(".main_nav", "bounceInDown");
@@ -10,7 +10,7 @@ animateCss('.form', "bounceInDown");
 
 function submitAction() {
     const form = document.querySelector('.form_signup');
-    const newUser = document.querySelector('#inputFirstName');
+    const firstName = document.querySelector('#inputFirstName');
     const lastName = document.querySelector('#inputLastName');
     const phoneNumber = document.querySelector('#inputPhoneNumber');
     const email = document.querySelector('#inputEmail');
@@ -18,9 +18,9 @@ function submitAction() {
     let empty = "";
 
     form.addEventListener("submit", function (e) {
-        alert(`Thanks For Subscribing ${newUser.value} !`);
+        alert(`Thanks For Subscribing ${firstName.value}!`);
         e.preventDefault();
-        newUser.value = empty;
+        firstName.value = empty;
         lastName.value = empty;
         phoneNumber.value = empty;
         email.value = empty;
@@ -29,3 +29,4 @@ function submitAction() {
 }
 
 submitAction();
+
