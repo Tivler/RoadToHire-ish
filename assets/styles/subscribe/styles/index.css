@@ -287,7 +287,7 @@ main {
 
 /* Section Three Styles  ---------------- */
 
-.section_three-wrapper {
+.contact_section-wrapper {
     color: #fff;
     background-color: #00a8b3;
     display: flex;
@@ -296,22 +296,22 @@ main {
     margin-top: 40px;
 }
 
-.fun_fact-wrapper {
+.contact_wrapper {
     text-align: center;
 }
 
-.fun_fact-wrapper:nth-child(2) {
+.contact_wrapper:nth-child(2) {
     padding: 0px 12%;
 }
 
 
-.fun_fact-heading {
+.contact_heading {
     font-size: 3em;
     letter-spacing: 1.2px;
     line-height: 1.2;
 }
 
-.fun_fact-subtext {
+.contact_subtext {
     text-align: center;
 }
 
