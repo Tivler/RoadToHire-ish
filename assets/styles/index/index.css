@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 @import url('https://fonts.googleapis.com/css?family=Cambay:400,700');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 /* Universal and Body Styles ------------------------------------------------  */
 
@@ -69,7 +70,7 @@ body {
     position: fixed;
     top: 0;
     color: #fff;
-    height: 90px;
+    height: 100px;
     width: 100%;
     background-color: transparent;
     z-index: 2000;
@@ -78,12 +79,12 @@ body {
 
 .main_nav.blue {
     background-color: rgba(35, 40, 55, 0.95);
-    height: 90px;
+    height: 100px;
 }
 
 .logo_wrapper {
-    height: 90px;
-    margin-left: 10%;
+    height: 100px;
+    margin-left: 14%;
     display: flex;
 }
 
@@ -97,28 +98,34 @@ body {
 }
 
 .logo_text {
-    font-weight: 400;
+    color: #fff;
+    font-weight: 700;
     display: inline;
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.275em;
     letter-spacing: 1.25px;
     line-height: 1.5;
     align-self: center;
     text-shadow: -2px 2px 1px #777;
     transition: .3s;
+    z-index: 999;
+    text-decoration: none;
+}
+
+.logo_text.blue {
+    text-shadow: none;
 }
 
 .nav_list-wrapper {
     position: fixed;
-    height: 90px;
+    height: 100px;
     width: 100%;
     top: 0;
     right: 0;
-    margin-right: 10%;
+    margin-right: 14%;
 }
 
 .main_nav-list {
-    height: 90px;
+    height: 100px;
     display: flex;
     align-items: center;
     float: right;
@@ -131,8 +138,9 @@ body {
 }
 
 .nav_list-item {
-    font-size: 1em;
-    letter-spacing: 1px;
+    font-family: "Montserrat";
+    font-size: 13px;
+    letter-spacing: 1.6px;
     color: #fff;
     text-decoration: none;
     text-shadow: -2px 2px 2px #777;
@@ -182,7 +190,7 @@ body {
     width: 60%;
     text-align: center;
     line-height: 35px;
-    animation-delay: .7s;
+    animation-delay: .5s;
 }
 
 .header_title::after {
@@ -205,7 +213,7 @@ body {
     letter-spacing: 2.275px;
     text-shadow: -2px 2px 2px #555;
     margin-top: 3.5em;
-    animation-delay: .5s;
+    animation-delay: .3s;
 }
 
 .button_wrapper {
@@ -290,6 +298,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    z-index: -99999;
 }
 
 .article_post {

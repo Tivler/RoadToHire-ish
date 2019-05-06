@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@import url('https://fonts.googleapis.com/css?family=Cambay:400,700');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* Universal and Body Styles ------------------------------------------------  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    ;
+}
+
+body {
+    font-family: "Cambay", sans-serif;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+}
+
+/* backsplash Styles ------------------------------------------------  */
+
+.backsplash {
+    height: 17vh;
+    background-color: rgba(241, 237, 237, .6);
+}
+
+/* Nav and logo wrapper styles ------------------------------------------------ */
+
+.main_nav {
+    position: fixed;
+    top: 0;
+    color: #fff;
+    height: 90px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 2000;
+    transition: .35s;
+    background-color: rgba(35, 40, 55, 0.95);
+}
+
+.logo_wrapper {
+    height: 90px;
+    margin-left: 17%;
+    display: flex;
+}
+
+.logo_image {
+    height: 39px;
+    width: 39px;
+    border-radius: 100%;
+    align-self: center;
+    margin-right: 15px;
+    filter: drop-shadow(-1px 1px 1px #777);
+}
+
+.logo_text {
+    color: #fff;
+    font-weight: 700;
+    display: inline;
+    font-size: 1.275em;
+    letter-spacing: 1.25px;
+    line-height: 1.5;
+    align-self: center;
+    text-shadow: -2px 2px 1px #777;
+    transition: .3s;
+    z-index: 999;
+    text-decoration: none;
+}
+
+.nav_list-wrapper {
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    margin-right: 17%;
+}
+
+.main_nav-list {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    float: right;
+    font-size: .95em;
+}
+
+.main_nav-list li {
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav_list-item {
+    font-family: "Montserrat";
+    font-size: 13px;
+    letter-spacing: 1.6px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: -2px 2px 2px #777;
+}
+
+.explore {
+    padding-right: 40px;
+}
+
+.food {
+    padding-right: 40px;
+}
+
+.contact {
+    padding-right: 40px;
+}
+
+/* Main Hero Wrapper and Heading Styles ---------------- */
+
+.main_header {
+    width: 85%;
+    position: absolute;
+    top: 310px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header_title {
+    font-family: "Cambay";
+    font-size: 3.8em;
+    font-weight: 600;
+    letter-spacing: .5px;
+    color: #484141;
+    width: 85vw;
+    text-align: center;
+    line-height: 35px;
+    animation-delay: .4s;
+}
+
+.header_title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(100, 100, 100, 0.2);
+    z-index: -1;
+}
+
+.header_description {
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-weight: 900;
+    color: #e26f6f;
+    font-size: 1.275em;
+    text-align: center;
+    letter-spacing: .07px;
+    margin-top: .65em;
+    animation-delay: .2s;
+}
