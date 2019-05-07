@@ -6,4 +6,3 @@ function animateCss(item, action) {
 animateCss(".main_nav", "bounceInDown");
 animateCss(".header_title", "bounceInUp");
 animateCss('.header_description', "bounceInUp");
-animateCss('.form', "bounceInDown");

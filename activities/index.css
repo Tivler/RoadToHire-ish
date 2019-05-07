@@ -29,6 +29,16 @@ body {
     background-color: rgba(241, 237, 237, .6);
 }
 
+.background-image {
+    background-color: #fff;
+    height: 65vh;
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 /* Nav and logo wrapper styles ------------------------------------------------ */
 
 .main_nav {
@@ -37,10 +47,9 @@ body {
     color: #fff;
     height: 90px;
     width: 100%;
-    background-color: transparent;
+    background-color: #fff;
     z-index: 2000;
     transition: .35s;
-    background-color: rgba(35, 40, 55, 0.95);
 }
 
 .logo_wrapper {
@@ -55,18 +64,17 @@ body {
     border-radius: 100%;
     align-self: center;
     margin-right: 15px;
-    filter: drop-shadow(-1px 1px 1px #777);
+    filter: drop-shadow(-2px 2px 1px #777);
 }
 
 .logo_text {
-    color: #fff;
+    color: #000;
     font-weight: 700;
     display: inline;
-    font-size: 1.275em;
+    font-size: 1.6em;
     letter-spacing: 1.25px;
     line-height: 1.5;
     align-self: center;
-    text-shadow: -2px 2px 1px #777;
     transition: .3s;
     z-index: 999;
     text-decoration: none;
@@ -96,11 +104,9 @@ body {
 
 .nav_list-item {
     font-family: "Montserrat";
-    font-size: 13px;
-    letter-spacing: 1.6px;
-    color: #fff;
+    font-size: 14px;
+    color: #000;
     text-decoration: none;
-    text-shadow: -2px 2px 2px #777;
 }
 
 .explore {
@@ -120,7 +126,7 @@ body {
 .main_header {
     width: 85%;
     position: absolute;
-    top: 310px;
+    top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -157,4 +163,37 @@ body {
     letter-spacing: .07px;
     margin-top: .65em;
     animation-delay: .2s;
+}
+
+
+
+.section_labels {
+    margin-top: 18%;
+}
+
+.section_title {
+    text-align: center;
+    color: #f97c80;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section_title::after {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    display: block;
+    height: 3px;
+    width: 1.5%;
+    background-color: #f97c80;
+}
+
+.section_subtext {
+    font-family: "Crimson text";
+    font-size: 1.2em;
+    line-height: 1.4;
+    color: #555;
+    text-align: center;
+    margin-bottom: 2%;
 }

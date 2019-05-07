@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 @import url('https://fonts.googleapis.com/css?family=Cambay:400,700');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400i');
-@import url('https://fonts.googleapis.com/css?family=Roboto:900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 /* Universal and Body Styles ---------------- */
 
@@ -43,7 +43,7 @@ main {
     position: fixed;
     top: 0;
     color: #fff;
-    height: 90px;
+    height: 100px;
     width: 100%;
     background-color: transparent;
     z-index: 2000;
@@ -52,7 +52,7 @@ main {
 }
 
 .logo_wrapper {
-    height: 90px;
+    height: 100px;
     margin-left: 17%;
     display: flex;
 }
@@ -70,7 +70,7 @@ main {
     color: #fff;
     font-weight: 700;
     display: inline;
-    font-size: 1.275em;
+    font-size: 1.6em;
     letter-spacing: 1.25px;
     line-height: 1.5;
     align-self: center;
@@ -79,17 +79,9 @@ main {
     text-decoration: none;
 }
 
-
-.logo_text-span {
-    align-self: center;
-    font-weight: initial;
-    font-size: .55em;
-}
-
-
 .nav_list-wrapper {
     position: fixed;
-    height: 90px;
+    height: 100px;
     width: 100%;
     top: 0;
     right: 0;
@@ -97,7 +89,7 @@ main {
 }
 
 .main_nav-list {
-    height: 90px;
+    height: 100px;
     display: flex;
     align-items: center;
     float: right;
@@ -110,16 +102,8 @@ main {
 }
 
 .nav_list-item {
-    font-size: 15px;
-    letter-spacing: 1px;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: -2px 2px 2px #777;
-}
-
-.nav_list-item {
-    font-size: 15px;
-    letter-spacing: 1px;
+    font-family: "Montserrat";
+    font-size: 14px;
     color: #fff;
     text-decoration: none;
     text-shadow: -2px 2px 2px #777;

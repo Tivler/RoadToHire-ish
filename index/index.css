@@ -100,18 +100,14 @@ body {
     color: #fff;
     font-weight: 700;
     display: inline;
-    font-size: 1.275em;
+    font-size: 1.6em;
     letter-spacing: 1.25px;
     line-height: 1.5;
     align-self: center;
-    text-shadow: -2px 2px 1px #777;
+    text-shadow: -2px 2px 1px #888;
     transition: .3s;
     z-index: 999;
     text-decoration: none;
-}
-
-.logo_text.blue {
-    text-shadow: none;
 }
 
 .nav_list-wrapper {
@@ -138,8 +134,7 @@ body {
 
 .nav_list-item {
     font-family: "Montserrat";
-    font-size: 13px;
-    letter-spacing: 1.6px;
+    font-size: 14px;
     color: #fff;
     text-decoration: none;
     text-shadow: -2px 2px 2px #777;
