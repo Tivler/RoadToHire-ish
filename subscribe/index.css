@@ -45,7 +45,6 @@ main {
     color: #fff;
     height: 100px;
     width: 100%;
-    background-color: transparent;
     z-index: 2000;
     transition: .35s;
     background-color: rgba(35, 40, 55, 0.95);
