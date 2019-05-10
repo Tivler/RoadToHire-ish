@@ -62,7 +62,6 @@ main {
     border-radius: 100%;
     align-self: center;
     margin-right: 15px;
-    filter: drop-shadow(-1px 1px 1px #777);
 }
 
 .logo_text {
@@ -73,7 +72,6 @@ main {
     letter-spacing: 1.25px;
     line-height: 1.5;
     align-self: center;
-    text-shadow: -2px 2px 1px #777;
     z-index: 999;
     text-decoration: none;
 }
@@ -102,29 +100,26 @@ main {
 
 .nav_list-item {
     font-family: "Montserrat";
-    font-size: 14px;
+    font-size: .9em;
     color: #fff;
     text-decoration: none;
-    text-shadow: -2px 2px 2px #777;
+    transition: .3s;
 }
 
-.home {
+.fade {
+    opacity: .75;
+}
+
+.fade:hover {
+    opacity: 1;
+    transition: .3s;
+}
+
+.activities, 
+.food, 
+.newsletter {
     padding-right: 40px;
 }
-
-.explore {
-    padding-right: 40px;
-}
-
-.food {
-    padding-right: 40px;
-}
-
-.contact {
-    padding-right: 40px;
-}
-
-
 
 /* Main Hero Wrapper and Heading Styles ---------------- */
 
