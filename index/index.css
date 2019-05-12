@@ -147,16 +147,10 @@ body {
 
 .list_item-link {
     font-family: "Montserrat";
-    font-size: .95em;
+    font-size: 1.15em;
     color: #fff;
     text-decoration: none;
-    text-shadow: -2px 2px 1px #000;
-    opacity: .85;
-}
-
-.list_item-link:hover {
-    opacity: 1;
-    transition: .3s;
+    text-shadow: -2px 2px 0px #000;
 }
 
 #nav:checked ~ .nav_list-wrapper .nav-list .nav_list-items .list_item-link {
@@ -324,11 +318,11 @@ body {
     font-family: "Cambay";
     font-weight: 700;
     color: #fff;
-    font-size: 1.375em;
+    font-size: 1.575em;
     text-align: center;
     line-height: 1.5em;
     letter-spacing: 2.275px;
-    text-shadow: -2px 2px 2px #555;
+    text-shadow: -2px 2px 2px #000;
     margin-top: 3.5em;
     animation-delay: .3s;
 }
@@ -341,7 +335,7 @@ body {
 .button {
     color: #fff;;
     line-height: 1px;
-    font-size: 16px;
+    font-size: 1.2em;
     text-decoration: none;
     text-align: center;
     border: 1px solid #fff;
@@ -432,7 +426,7 @@ body {
 
 /* section one styles ------------------------------------------------ */
 
-.section_one-wrapper {
+.article_section {
     background-color: #fff;
     margin: 3% 17%;
     margin-bottom: 7%;
@@ -591,40 +585,40 @@ body {
 
 
 @media only screen and (max-width: 2222px) {
-    .section_one-wrapper {
+    .article_section {
         margin: 3% 10%;
     }
 }
 
 @media only screen and (max-width: 1900px) {
-    .section_one-wrapper {
+    .article_section {
         margin: 3% 5%;
     }
 }
 
 
 @media only screen and (max-width: 1586px) {
-    .section_one-wrapper {
+    .article_section {
         margin: 3% 3%;
     }
 }
 
 
 @media only screen and (max-width: 1460px) {
-    .section_one-wrapper {
+    .article_section {
         margin: 5% 3%;
     }
 }
 
 @media only screen and (max-width: 1400px) {
-    .section_one-wrapper {
+    .article_section {
         margin: 5% 2%;
     }
 }
 
 /* Section Two and Video Styles  ------------------------------------------------  */
 
-.section_two-wrapper {
+.newsletter_section {
     margin-bottom: 7%;
 }
 
@@ -726,7 +720,7 @@ body {
 
 @media only screen and (max-width: 1200px) {
 
-    .section_two-wrapper {
+    .newsletter_section {
         margin-bottom: 7%;
     }
 
@@ -780,7 +774,7 @@ body {
 
 /* content in video section Styles  ------------------------------------------------  */
 
-.content_right {
+.content_right-wrapper {
     width: 100%;
     padding: 95px 100px;
     background-color: #2d3240;
@@ -824,11 +818,7 @@ body {
 
 
 @media only screen and (max-width: 1900px) {
-    .content_right {
-        padding: 35px 60px;
-    }
-
-    .content_right {
+    .content_right-wrapper {
         background-color: #2d3240;
         padding: 65px 60px;
     }
@@ -845,7 +835,7 @@ body {
 }
 
 @media only screen and (max-width: 1472px) {
-    .content_right {
+    .content_right-wrapper {
         background-color: #2d3240;
         padding: 35px 60px;
     }
@@ -859,7 +849,7 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
-    .content_right {
+    .content_right-wrapper {
        display: none;
     }
 
@@ -870,7 +860,7 @@ body {
 
 /* Section Three Styles  ------------------------------------------------  */
 
-.section_three-wrapper {
+.facts_section {
     display: flex;
     justify-content: center;
     padding: 4% 25%;
@@ -878,41 +868,41 @@ body {
     background-color: #00a8b3;
 }
 
-.fun_fact-wrapper {
+.fact_wrapper {
     text-align: center;
 }
 
-.fun_fact-wrapper:nth-child(2) {
+.fact_wrapper:nth-child(2) {
     padding: 0px 16%;
 }
 
 
-.fun_fact-heading {
+.fact_heading {
     font-size: 3em;
     letter-spacing: 1.2px;
     line-height: 1.2;
 }
 
-.fun_fact-subtext {
+.fact_subtext {
     text-align: center;
 }
 
 @media only screen and (max-width: 2034px) {
-    .fun_fact-heading {
+    .fact_heading {
         font-size: 2em;
     }
 
-    .fun_fact-subtext {
+    .fact_subtext {
         font-size: 1em;
     }
 }
 
 @media only screen and (max-width: 1472px) {
-    .section_three-wrapper {
+    .facts_section {
         display: none;
     }
 
-    .fun_fact-labels {
+    .fact_labels {
         display: none;
     }
 }
@@ -934,17 +924,17 @@ body {
     text-align: center;
 }
 
-.footer_nav--list {
+.footer_nav-list {
     list-style: none;
 }
 
-.footer_nav--item {
+.footer_nav-item {
     color: #fff;
     text-decoration: none;
     text-align: center;
 }
 
-.footer_icon--list {
+.footer_icon-list {
     display: flex;
     justify-content: center;
 }
