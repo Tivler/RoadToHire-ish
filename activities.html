@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./activities/index.css">
+    <link rel="stylesheet" href="./activities/activities.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -16,14 +16,22 @@
     <div class="background-image"></div>
 
     <nav class="main_nav">
+        <input type="checkbox" id="nav" class="hidden">
+        <label for="nav" class="nav_button">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
         <div class="logo_wrapper">
             <img class="logo_image" src="../assets/images/avi.jpg" alt="Logo">
             <a class="logo_text" href="/index.html"><div>Japan</div></a>
         </div>
         <div class="nav_list-wrapper">
-            <ul class="main_nav-list">
-                <li class="food"><a class="nav_list-item" href="#">Things To Eat</a></li>
-                <li class="subscribe"><a class="nav_list-item" href="/subscribe.html">Join Our Newsletter</a></li>
+            <ul class="nav_list">
+                <li class="nav_list-items fade"><a class="list_item-link" href="/index.html">Home</a></li>
+                <li class="nav_list-items food"><a class="list_item-link" href="#">Activites</a></li>
+                <li class="nav_list-items fade"><a class="list_item-link" href="#">Things To Eat</a></li>
+                <li class="nav_list-items fade"><a class="list_item-link" href="/subscribe.html">Newsletter</a></li>
             </ul>
         </div>
     </nav>

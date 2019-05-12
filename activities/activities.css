@@ -45,82 +45,221 @@ body {
     position: fixed;
     top: 0;
     color: #fff;
-    height: 90px;
+    height: 6.250em;
     width: 100%;
-    background-color: rgba(35, 40, 55, 0.95);
-    z-index: 2000;
+    z-index: 999;
     transition: .35s;
+    background-color: rgba(35, 40, 55, 0.95);
 }
 
 .logo_wrapper {
-    height: 90px;
-    margin-left: 17%;
+    height: 6.250em;
+    margin-left: 14%;
     display: flex;
 }
 
 .logo_image {
-    height: 39px;
-    width: 39px;
+    height: 2.75em;
+    width: 2.75em;
     border-radius: 100%;
     align-self: center;
     margin-right: 15px;
-    filter: drop-shadow(-2px 2px 1px #777);
+    filter: drop-shadow(-1px 1px 1px #000);
+    z-index: 999;
 }
 
 .logo_text {
     color: #fff;
     font-weight: 700;
     display: inline;
-    font-size: 1.6em;
+    font-size: 2em;
     letter-spacing: 1.25px;
     line-height: 1.5;
     align-self: center;
-    transition: .3s;
+    text-shadow: -2px 2px 1px #000;
     z-index: 999;
     text-decoration: none;
+    transition: .3s;
 }
 
 .nav_list-wrapper {
     position: fixed;
-    height: 90px;
-    width: 100%;
     top: 0;
     right: 0;
-    margin-right: 17%;
+    height: 6.250em;
+    width: 100%;
+    margin-right: 14%;
 }
 
-.main_nav-list {
-    height: 90px;
+.nav_list {
     display: flex;
     align-items: center;
     float: right;
+    height: 6.7em;
     font-size: .95em;
 }
 
-.main_nav-list li {
+.nav_list-items{
     align-items: center;
     list-style-type: none;
 }
 
-.nav_list-item {
+.nav_list-items:first-child {
+    padding-right: 40px;
+}
+
+.nav_list-items:nth-child(2) {
+    padding-right: 40px;
+}
+
+.nav_list-items:nth-child(3) {
+    padding-right: 40px;
+}
+
+.list_item-link {
     font-family: "Montserrat";
-    font-size: 14px;
+    font-size: 1.15em;
     color: #fff;
     text-decoration: none;
+    text-shadow: -2px 2px 0px #000;
 }
 
-.explore {
-    padding-right: 40px;
+.fade {
+    opacity: .75;
 }
 
-.food {
-    padding-right: 40px;
+.fade:hover {
+    opacity: 1;
+    transition: .3s;
 }
 
-.contact {
-    padding-right: 40px;
+#nav:checked ~ .nav_list-wrapper .nav_list .nav_list-items .list_item-link {
+    opacity: 1;
+    display: block;
 }
 
+#nav:checked + .nav_button i {
+    background: #fff;
+    transition: transform 0.2s ease;
+    box-shadow: none;
+}
+
+#nav:checked + .nav_button i:nth-child(1) {
+    transform: translateY(14px) rotate(90deg);
+}
+
+#nav:checked + .nav_button i:nth-child(2) {
+    opacity: 0;
+}
+
+#nav:checked + .nav_button i:nth-child(3) {
+    transform:rotate(180deg);
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .nav_list-wrapper {
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease;
+        z-index: -1;
+    }
+
+    .nav_list {
+        display: none;
+        display: flex;
+        flex-direction: column;  
+        height: 100vh;
+        width: 100%;
+    }
+
+    .nav_list-items:first-child {
+        margin-top: 25%;
+        padding-right: 0px;
+    }
+    
+    .nav_list-items:nth-child(2) {
+        margin-top: 10%;
+        padding-right: 0px;
+    }
+
+    .nav_list-items:nth-child(3) {
+        margin-top: 10%;
+        padding-right: 0px;
+    }
+
+    .nav_list-items:nth-child(4) {
+        margin-top: 10%;
+    }
+
+    .list_item-link {
+        display: none;
+        font-size: 1.8em;
+        opacity: 0;
+    }
+
+    .nav_button {
+        position: fixed;
+        right: 0;
+        top: 2.3em;
+        display:inline-block;
+        width: fit-content;
+        height: fit-content;
+        cursor: pointer;
+        margin-right: 14%;
+        z-index: 9999;
+        border-radius: 50%;
+    }
+
+    .nav_button i {
+        display: block;
+        width: 26px;
+        height: 3px;
+        background: #fff;
+        box-shadow: -2px 2px 1px #000;
+        border-radius: 2px;
+        margin-left: 14px;
+    }
+
+    .nav_button i:nth-child(2) {
+        margin-top: 4px;
+    }
+
+    .nav_button i:nth-child(3) {
+        margin-top: 4px;
+    }
+
+    #nav:checked ~ .nav_list-wrapper {
+        height: 100vh;
+        background-color: rgba(35, 40, 55, 0.98);
+    }
+}
+
+@media only screen and (max-width: 950px) {
+   .logo_image {
+       display: none;
+   }
+
+   .logo_text {
+       font-size: 1.7em
+   }
+}
+
+@media only screen and (max-width: 570px) {
+   .logo_text {
+       z-index: -999;
+   }
+   
+    .nav_list-items:first-child {
+        margin-top: 45%;
+        padding-right: 0px;
+    }
+}
 /* Main Hero Wrapper and Heading Styles ---------------- */
 
 .main_header {
