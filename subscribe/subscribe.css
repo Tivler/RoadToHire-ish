@@ -34,76 +34,92 @@ main {
 
 .content_wrapper {
     height: 1250px;
+    width: 100%;
 }
 
 
 /* Nav and logo wrapper styles---------------- */
-
 .main_nav {
     position: fixed;
     top: 0;
     color: #fff;
-    height: 100px;
+    height: 6.250em;
     width: 100%;
-    z-index: 2000;
+    z-index: 999;
     transition: .35s;
     background-color: rgba(35, 40, 55, 0.95);
 }
 
 .logo_wrapper {
-    height: 100px;
-    margin-left: 17%;
+    height: 6.250em;
+    margin-left: 14%;
     display: flex;
 }
 
 .logo_image {
-    height: 39px;
-    width: 39px;
+    height: 2.75em;
+    width: 2.75em;
     border-radius: 100%;
     align-self: center;
     margin-right: 15px;
+    filter: drop-shadow(-1px 1px 1px #000);
+    z-index: 999;
 }
 
 .logo_text {
     color: #fff;
     font-weight: 700;
     display: inline;
-    font-size: 1.6em;
+    font-size: 2em;
     letter-spacing: 1.25px;
     line-height: 1.5;
     align-self: center;
+    text-shadow: -2px 2px 1px #000;
     z-index: 999;
     text-decoration: none;
+    transition: .3s;
 }
 
 .nav_list-wrapper {
     position: fixed;
-    height: 100px;
-    width: 100%;
     top: 0;
     right: 0;
-    margin-right: 17%;
+    height: 6.250em;
+    width: 100%;
+    margin-right: 14%;
 }
 
-.main_nav-list {
-    height: 100px;
+.nav_list {
     display: flex;
     align-items: center;
     float: right;
+    height: 6.7em;
     font-size: .95em;
 }
 
-.main_nav-list li {
+.nav_list-items{
     align-items: center;
     list-style-type: none;
 }
 
-.nav_list-item {
+.nav_list-items:first-child {
+    padding-right: 40px;
+}
+
+.nav_list-items:nth-child(2) {
+    padding-right: 40px;
+}
+
+.nav_list-items:nth-child(3) {
+    padding-right: 40px;
+}
+
+.list_item-link {
     font-family: "Montserrat";
-    font-size: .9em;
+    font-size: 1.15em;
     color: #fff;
     text-decoration: none;
-    transition: .3s;
+    text-shadow: -2px 2px 0px #000;
 }
 
 .fade {
@@ -115,11 +131,133 @@ main {
     transition: .3s;
 }
 
-.activities, 
-.food, 
-.newsletter {
-    padding-right: 40px;
+#nav:checked ~ .nav_list-wrapper .nav_list .nav_list-items .list_item-link {
+    opacity: 1;
+    display: block;
 }
+
+#nav:checked + .nav_button i {
+    background: #fff;
+    transition: transform 0.2s ease;
+    box-shadow: none;
+}
+
+#nav:checked + .nav_button i:nth-child(1) {
+    transform: translateY(14px) rotate(90deg);
+}
+
+#nav:checked + .nav_button i:nth-child(2) {
+    opacity: 0;
+}
+
+#nav:checked + .nav_button i:nth-child(3) {
+    transform:rotate(180deg);
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .nav_list-wrapper {
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease;
+        z-index: -1;
+    }
+
+    .nav_list {
+        display: flex;
+        flex-direction: column;  
+        height: 100vh;
+        width: 100%;
+    }
+
+    .nav_list-items:first-child {
+        margin-top: 25%;
+        padding-right: 0px;
+    }
+    
+    .nav_list-items:nth-child(2) {
+        margin-top: 10%;
+        padding-right: 0px;
+    }
+
+    .nav_list-items:nth-child(3) {
+        margin-top: 10%;
+        padding-right: 0px;
+    }
+
+    .nav_list-items:nth-child(4) {
+        margin-top: 10%;
+    }
+
+    .list_item-link {
+        display: none;
+        font-size: 1.8em;
+        opacity: 0;
+    }
+
+    .nav_button {
+        position: fixed;
+        right: 0;
+        top: 2.3em;
+        display:inline-block;
+        width: fit-content;
+        height: fit-content;
+        cursor: pointer;
+        margin-right: 14%;
+        z-index: 9999;
+        border-radius: 50%;
+    }
+
+    .nav_button i {
+        display: block;
+        width: 26px;
+        height: 3px;
+        background: #fff;
+        box-shadow: -2px 2px 1px #000;
+        border-radius: 2px;
+        margin-left: 14px;
+    }
+
+    .nav_button i:nth-child(2) {
+        margin-top: 4px;
+    }
+
+    .nav_button i:nth-child(3) {
+        margin-top: 4px;
+    }
+
+    #nav:checked ~ .nav_list-wrapper {
+        height: 100vh;
+        background-color: rgba(35, 40, 55, 0.98);
+    }
+}
+
+@media only screen and (max-width: 950px) {
+   .logo_image {
+       display: none;
+   }
+
+   .logo_text {
+       font-size: 1.7em
+   }
+}
+
+@media only screen and (max-width: 570px) {
+   .logo_text {
+       z-index: -999;
+   }
+   
+    .nav_list-items:first-child {
+        margin-top: 45%;
+        padding-right: 0px;
+    }
+}
+
 
 /* Main Hero Wrapper and Heading Styles ---------------- */
 
@@ -170,7 +308,6 @@ main {
     position: absolute;
     top: 875px;
     left: 50%;
-    margin-right: -50%;
     transform: translate(-50%, -50%);
 }
 
@@ -179,11 +316,11 @@ main {
     flex-direction: column;
     text-align: center;
     box-shadow: -2px 2px 40px 0 rgba(0, 0, 0, 0.1);
-    width: 400px;
     padding: 100px 100px 110px 100px;
     justify-content: center;
     border-radius: 5px;
     animation-delay: .2s;
+    width: 30em;
 }
 
 .form-logo {
@@ -257,7 +394,33 @@ main {
     margin-top: 40px;
 }
 
+@media only screen and (max-width: 750px) {
+    .form {
+        width: 30em;
+        padding: 80px 80px 90px 80px;        
+   }
+ }
 
+ @media only screen and (max-width: 700px) {
+    .form {
+        width: 25em;
+        padding: 65px 65px 75px 65px;        
+   }
+ }
+
+ @media only screen and (max-width: 570px) {
+    .form {
+        width: 20em;
+        padding: 65px 65px 75px 65px;        
+   }
+ }
+
+ @media only screen and (max-width: 480px) {
+    .form {
+        width: 16em;
+        padding: 55px 55px 65px 55px;        
+   }
+ }
 
 /* Section Three Styles  ---------------- */
 
@@ -290,7 +453,35 @@ main {
 }
 
 
+@media only screen and (max-width: 1340px) {
+    .contact_heading {
+        font-size: 2em;
+    }
+ }
 
+ @media only screen and (max-width: 915px) {
+    .contact_heading {
+        font-size: 1.3em;
+    }
+ }
+
+ @media only screen and (max-width: 600px) {
+    .contact_section-wrapper {
+        margin-top: 0;
+        padding: 7% 25%;
+    }
+ }
+
+ @media only screen and (max-width: 320px) {
+    .contact_heading {
+        font-size: 1em;
+    }
+
+    .contact_subtext {
+        font-size: .9em;
+        text-align: center;
+    }
+ }
 
 /* Footer and Social Icon Styles  ---------------- */
 
@@ -337,3 +528,9 @@ main {
     text-align: center;
     font-size: 75%;
 }
+
+@media only screen and (max-width: 600px) {
+    .main_footer {
+        padding: 5% 2%;
+    }
+ }

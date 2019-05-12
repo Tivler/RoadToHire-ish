@@ -124,7 +124,7 @@ body {
     margin-right: 14%;
 }
 
-.nav-list {
+.nav_list {
     display: flex;
     align-items: center;
     float: right;
@@ -153,7 +153,7 @@ body {
     text-shadow: -2px 2px 0px #000;
 }
 
-#nav:checked ~ .nav_list-wrapper .nav-list .nav_list-items .list_item-link {
+#nav:checked ~ .nav_list-wrapper .nav_list .nav_list-items .list_item-link {
     opacity: 1;
     display: block;
 }
@@ -190,7 +190,7 @@ body {
         z-index: -1;
     }
 
-    .nav-list {
+    .nav_list {
         display: flex;
         flex-direction: column;  
         height: 100vh;
