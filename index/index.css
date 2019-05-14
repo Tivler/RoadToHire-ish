@@ -24,13 +24,27 @@ body {
 /* Hero Image Styles ------------------------------------------------  */
 
 .background-image {
-    background: url(/assets/images/hero-image.jpg);
+    background: url(/assets/images/hero-image8.jpg);
     height: 65vh;
     width: 100%;
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    z-index: -999999;
+}
+
+.background-image:before {
+    content: '';
+    display: block;
+    background-color: #000;
+    height: 65vh;
+    left: 0;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 @media only screen and (max-width: 1440px) and (max-height: 1400px) {
@@ -286,6 +300,7 @@ body {
     top: 32.5%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .header_title {
