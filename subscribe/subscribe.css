@@ -43,7 +43,7 @@ main {
     position: fixed;
     top: 0;
     color: #fff;
-    height: 6.250em;
+    height: 100px;
     width: 100%;
     z-index: 999;
     transition: .35s;
@@ -51,7 +51,7 @@ main {
 }
 
 .logo_wrapper {
-    height: 6.250em;
+    height: 100px;
     margin-left: 14%;
     display: flex;
 }
@@ -84,7 +84,7 @@ main {
     position: fixed;
     top: 0;
     right: 0;
-    height: 6.250em;
+    height: 100px;
     width: 100%;
     margin-right: 14%;
 }
@@ -93,7 +93,7 @@ main {
     display: flex;
     align-items: center;
     float: right;
-    height: 6.7em;
+    height: 100px;
     font-size: .95em;
 }
 
