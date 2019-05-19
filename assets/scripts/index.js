@@ -14,7 +14,7 @@ function navEffect() {
     const nav = document.querySelector('.main_nav');
 
     window.addEventListener('scroll', function () {
-        if (window.scrollY >= 108) {
+        if (window.scrollY >= 100) {
             nav.classList.add('blue');
         } else {
             nav.classList.remove('blue');

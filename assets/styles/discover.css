@@ -22,12 +22,12 @@ body {
     width: 100%;
 }
 
-/* backsplash Styles ------------------------------------------------  */
+/* background image Styles ------------------------------------------------  */
 
 .background-image {
-    height: 100vh;
+    height: 65vh;
     width: 100%;
-    background: url(../assets/images/destinations/mtfuji.jpg);
+    background: url(../images/mtfuji.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -263,12 +263,13 @@ body {
         padding-right: 0px;
     }
 }
+
 /* Main Hero Wrapper and Heading Styles ---------------- */
 
 .main_header {
     width: 85%;
     position: absolute;
-    top: 50vh;
+    top: 32.5%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -319,70 +320,79 @@ body {
 
 /* Destination Section Styles  ---------------- */
 
+.destination_section {
+    background-color: #fff;
+    margin: 3% 17%;
+}
 
-
-
-/* Section Three Styles  ---------------- */
-
-.contact_section-wrapper {
-    color: #fff;
-    background-color: #00a8b3;
-    display: flex;
+.destination_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
-    padding: 4% 25%;
-    margin-top: 40px;
 }
 
-.contact_wrapper {
-    text-align: center;
+.destination_post {
+    height: 290px;
+    width: inherit;
+    margin: 0.500em;
+    box-shadow: -2px 2px 40px 0 rgba(0, 0, 0, 0.18);
+    border-radius: 3px;
 }
 
-.contact_wrapper:nth-child(2) {
-    padding: 0px 12%;
+.post-one {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    height: 600px;
+    width: inherit;
+    margin-right: 0.500em;
+    background: url(../images/destinations/tokyo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-
-.contact_heading {
-    font-size: 3em;
-    letter-spacing: 1.2px;
-    line-height: 1.2;
+.post-two {
+    background: url(../images/destinations/kyoto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.contact_subtext {
-    text-align: center;
+.post-three {
+    background: url(../images/destinations/mtfuji.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.post-four {
+    background: url(../images/destinations/hiroshima.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-@media only screen and (max-width: 1340px) {
-    .contact_heading {
-        font-size: 2em;
-    }
- }
+.post-five {
+    background: url(../images/destinations/hokkaido.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
- @media only screen and (max-width: 915px) {
-    .contact_heading {
-        font-size: 1.3em;
-    }
- }
+.post-six {
+    background: url(../images/destinations/shikoku.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
- @media only screen and (max-width: 600px) {
-    .contact_section-wrapper {
-        margin-top: 0;
-        padding: 7% 25%;
-    }
- }
-
- @media only screen and (max-width: 320px) {
-    .contact_heading {
-        font-size: 1em;
-    }
-
-    .contact_subtext {
-        font-size: .9em;
-        text-align: center;
-    }
- }
-
+.post-seven {
+    background: url(../images/destinations/yakushima.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* Footer and Social Icon Styles  ---------------- */
 
 .main_footer {
