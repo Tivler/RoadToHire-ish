@@ -5,6 +5,7 @@ function animateCss(item, action) {
 
 animateCss(".main_nav", "bounceInDown");
 animateCss(".header_title", "bounceInUp");
+animateCss(".destination_section" ,"bounceInUp");
 
 function navEffect() {
     const nav = document.querySelector('.main_nav');

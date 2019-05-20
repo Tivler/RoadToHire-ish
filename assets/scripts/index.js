@@ -7,7 +7,7 @@ animateCss(".main_nav", "bounceInDown");
 animateCss(".header_title", "bounceInDown");
 animateCss('.header_description', "bounceInDown");
 animateCss('.button', "bounceInDown");
-animateCss('.article_wrapper' ,"bounceInUp");
+animateCss('.article_section' ,"bounceInUp");
 
 
 function navEffect() {
