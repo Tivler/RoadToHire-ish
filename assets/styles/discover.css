@@ -334,7 +334,7 @@ body {
 
 
 
-/* Section labels styles ---------------- */
+/* Section labels and universal section styles ---------------- */
         
 .section_labels {
     margin-top: 30vh;
@@ -368,7 +368,11 @@ body {
 }
 
 
-
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    height: inherit;
+ }
 
 
 
@@ -400,6 +404,16 @@ body {
     margin: 0.500em;
     box-shadow: -2px 2px 40px 0 rgba(0, 0, 0, 0.18);
     border-radius: 3px;
+    transition: .2s ease-in-out;
+}
+
+.destination_post:hover {
+    transform: scale(1.02);
+    transition: .2s ease-in-out;
+}
+
+.destination_title {
+    align-self: center;
 }
 
 .post-one {
@@ -408,14 +422,14 @@ body {
     height: 600px;
     width: inherit;
     margin-right: 0.500em;
-    background: url(../images/destinations/tokyo.jpg);
+    background: url(../images/destinations/kyoto1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .post-two {
-    background: url(../images/destinations/kyoto.jpg);
+    background: url(../images/destinations/tokyo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -455,10 +469,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-
-
 
 /* Activities Section Styles  ---------------- */
 
