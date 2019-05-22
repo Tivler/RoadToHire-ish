@@ -474,7 +474,7 @@ body {
 
 .activities_section {
     background-color: #fff;
-    margin: 7% 25% 3%;
+    margin: 7% 25% 7%;
 }
 
 .activities_wrapper {
@@ -490,6 +490,12 @@ body {
     margin: 0.500em;
     box-shadow: -2px 2px 40px 0 rgba(0, 0, 0, 0.18);
     border-radius: 3px;
+    transition: .2s ease-in-out;
+}
+
+.activities_post:hover {
+    transform: scale(1.02);
+    transition: .2s ease-in-out;
 }
 
 .activity-one {
@@ -531,7 +537,27 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* Divider section Styles  ---------------- */
 
+.divider_section {
+    height: 100vh;
+    width: 100%;
+    background: url(../images/mtfuji.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.divider_section::before {
+    content: '';
+    display: block;
+    background-color: #000;
+    height: 100vh;
+    opacity: 0.1;
+    width: 100%;
+    z-index: 1;
+}
 
 /* Resturants section Styles  ---------------- */
 
@@ -553,6 +579,12 @@ body {
     margin: 0.500em;
     box-shadow: -2px 2px 40px 0 rgba(0, 0, 0, 0.18);
     border-radius: 3px;
+    transition: .2s ease-in-out;
+}
+
+.resturants_post:hover {
+    transform: scale(1.02);
+    transition: .2s ease-in-out;
 }
 
 .resturant-one {
@@ -589,6 +621,74 @@ body {
 }
 
 .resturant-five {
+    background: url(../images/restaurants/tofuyaukai.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* NightLife section Styles  ---------------- */
+
+.nightlife_section {
+    background-color: #fff;
+    margin: 7% 25% 10%;
+}
+
+.nightlife_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.nightlife_post {
+    height: 315px;
+    width: inherit;
+    margin: 0.500em;
+    box-shadow: -2px 2px 40px 0 rgba(0, 0, 0, 0.18);
+    border-radius: 3px;
+    transition: .2s ease-in-out;
+}
+
+.nightlife_post:hover {
+    transform: scale(1.02);
+    transition: .2s ease-in-out;
+}
+
+.nightlife-one {
+    grid-column: 3 / 6;
+    grid-row: 1 / 3;
+    height: 650px;
+    width: inherit;
+    margin-right: 0.500em;
+    background: url(../images/restaurants/sushidai.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nightlife-two {
+    background: url(../images/restaurants/kawashimatofu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nightlife-three {
+    background: url(../images/restaurants/inua.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nightlife-four {
+    background: url(../images/restaurants/kikunoi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nightlife-five {
     background: url(../images/restaurants/tofuyaukai.jpg);
     background-position: center;
     background-repeat: no-repeat;
