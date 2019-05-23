@@ -533,6 +533,9 @@ body {
 /* Divider section Styles  ---------------- */
 
 .divider_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 450px;
     width: 100%;
     background: url(../images/divider/bridge-city-daylight-115603.jpg);
@@ -543,22 +546,7 @@ body {
     border-bottom: 20px solid #e26f6f;
 }
 
-.divider_section::before {
-    content: '';
-    display: block;
-    background-color: #000;
-    height: 450px;
-    opacity: 0.6;
-    width: 100%;
-    z-index: 1;
-}
-
 .divider_content {
-    position: absolute;
-    top: 232%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    width: 100%;
     text-align: center;
 }
 
