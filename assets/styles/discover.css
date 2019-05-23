@@ -26,13 +26,6 @@ body {
 
 
 
-
-
-
-
-
-
-
 /* background image Styles ------------------------------------------------  */
 
 .background-image {
@@ -540,23 +533,55 @@ body {
 /* Divider section Styles  ---------------- */
 
 .divider_section {
-    height: 100vh;
+    height: 450px;
     width: 100%;
-    background: url(../images/mtfuji.jpg);
+    background: url(../images/divider/bridge-city-daylight-115603.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    border-bottom: 20px solid #e26f6f;
 }
 
 .divider_section::before {
     content: '';
     display: block;
     background-color: #000;
-    height: 100vh;
-    opacity: 0.1;
+    height: 450px;
+    opacity: 0.6;
     width: 100%;
     z-index: 1;
+}
+
+.divider_content {
+    position: absolute;
+    top: 232%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.divider_title {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.divider_button {
+    color: #fff;
+    font-size: 1em;
+    line-height: 1em;
+    text-decoration: none;
+    border: 1px solid #fff;
+    width: 100%;
+    padding: 12px 50px 7px;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.divider_button:hover {
+    background-color: #e26f6f;
+    border: 1px solid #e26f6f;
 }
 
 /* Resturants section Styles  ---------------- */
