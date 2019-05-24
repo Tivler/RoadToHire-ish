@@ -24,7 +24,7 @@ body {
 /* Hero Image Styles ------------------------------------------------  */
 
 .background-image {
-    background: url(/assets/images/hero1.jpg);
+    background: url(/assets/images/heros/main-hero.jpg);
     height: 65vh;
     width: 100%;
     background-position: bottom;
@@ -475,84 +475,84 @@ body {
 
 
 .article_post:first-child {
-    background: url('/assets//images/articles/post-image1.jpg');
+    background: url('/assets//images/articles/article.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .article_post:nth-child(2) {
-    background: url('/assets/images/articles/post-image2.jpg');
+    background: url('/assets/images/articles/article2.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .article_post:nth-child(3) {
-    background: url('/assets/images/articles/post-image3.jpg');
+    background: url('/assets/images/articles/article3.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .article_post:nth-child(4) {
-    background: url('/assets/images/articles/post-image4.jpg');
+    background: url('/assets/images/articles/article4.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .article_post:nth-child(5) {
-    background: url('/assets/images/articles/post-image5.jpg');
+    background: url('/assets/images/articles/article5.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .article_post:nth-child(6) {
-    background: url('/assets/images/articles/post-image6.jpg');
+    background: url('/assets/images/articles/article6.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .article_post:nth-child(7) {
-    background: url('/assets/images/articles/post-image7.jpg');
+    background: url('/assets/images/articles/article7.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .article_post:nth-child(8) {
-    background: url('/assets/images/articles/post-image8.jpg');
+    background: url('/assets/images/articles/article8.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .article_post:nth-child(9) {
-    background: url('/assets/images/articles/post-image9.jpg');
+    background: url('/assets/images/articles/article9.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .article_post:nth-child(10) {
-    background: url('/assets/images/articles/post-image10.jpg');
+    background: url('/assets/images/articles/article10.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .article_post:nth-child(11) {
-    background: url('/assets/images/articles/post-image11.jpg');
+    background: url('/assets/images/articles/article11.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .article_post:last-child {
-    background: url('/assets/images/articles/post-image12.jpg');
+    background: url('/assets/images/articles/article12.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
