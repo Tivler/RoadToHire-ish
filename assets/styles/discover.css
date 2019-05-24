@@ -329,10 +329,6 @@ body {
 
 /* Section labels and universal section styles ---------------- */
         
-.section_labels {
-    margin-top: 30vh;
-}
-
 .section_title {
     text-align: center;
     color: #f97c80;
@@ -361,7 +357,7 @@ body {
 }
 
 
-.content-wrapper {
+.content_wrapper {
     display: flex;
     justify-content: center;
     height: inherit;
@@ -392,7 +388,7 @@ body {
 }
 
 .destination_post {
-    height: 290px;
+    height: 292px;
     width: inherit;
     margin: 0.500em;
     box-shadow: -2px 2px 40px 0 rgba(0, 0, 0, 0.18);
@@ -405,11 +401,25 @@ body {
     transition: .2s ease-in-out;
 }
 
+.main_destination-link {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    height: 600px;
+    width: inherit;
+    color: #fff;
+    text-decoration: none;
+}
+
+.destination_link {
+    color: #fff;
+    text-decoration: none;
+}
+
 .destination_title {
     align-self: center;
 }
 
-.post-one {
+.destination_one {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
     height: 600px;
@@ -421,47 +431,50 @@ body {
     background-size: cover;
 }
 
-.post-two {
+.destination_two {
     background: url(../images/destinations/tokyo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.post-three {
+.destination_three {
     background: url(../images/destinations/mtfuji.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.post-four {
+.destination_four {
     background: url(../images/destinations/hiroshima.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.post-five {
+.destination_five {
     background: url(../images/destinations/hokkaido.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.post-six {
+.destination_six {
     background: url(../images/destinations/shikoku.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.post-seven {
+.destination_seven {
     background: url(../images/destinations/yakushima.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
 
 /* Activities Section Styles  ---------------- */
 
@@ -491,7 +504,21 @@ body {
     transition: .2s ease-in-out;
 }
 
-.activity-one {
+.main_activity-link {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    height: 600px;
+    width: inherit;
+    color: #fff;
+    text-decoration: none;
+}
+
+.activity_link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.activity_one {
     grid-column: 3 / 6;
     grid-row: 1 / 3;
     height: 650px;
@@ -503,33 +530,35 @@ body {
     background-size: cover;
 }
 
-.activity-two {
+.activity_two {
     background: url(../images/activities/activity2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.activity-three {
+.activity_three {
     background: url(../images/activities/activity3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.activity-four {
+.activity_four {
     background: url(../images/activities/activity4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.activity-five {
+.activity_five {
     background: url(../images/activities/activity5.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 /* Divider section Styles  ---------------- */
 
 .divider_section {
