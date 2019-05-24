@@ -492,6 +492,16 @@ body {
     justify-content: center;
 }
 
+.main_activity-link {
+    grid-column: 3 / 6;
+    grid-row: 1 / 3;
+    height: 600px;
+    width: inherit;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: -2px 2px 2px #000;
+}
+
 .activities_post {
     height: 315px;
     width: inherit;
@@ -504,16 +514,6 @@ body {
 .activities_post:hover {
     transform: scale(1.02);
     transition: .2s ease-in-out;
-}
-
-.main_activity-link {
-    grid-column: 3 / 6;
-    grid-row: 1 / 3;
-    height: 600px;
-    width: inherit;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: -2px 2px 2px #000;
 }
 
 .activity_one {
@@ -563,7 +563,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 450px;
+    height: 550px;
     width: 100%;
     background: url(../images/divider/things.jpg);
     background-position: center;
@@ -571,6 +571,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     border-bottom: 20px solid #e26f6f;
+    margin-bottom: 5.25%;
 }
 
 .divider_content {
@@ -601,19 +602,29 @@ body {
 
 /* Resturants section Styles  ---------------- */
 
-.resturants_section {
+.restaurants_section {
     background-color: #fff;
     margin: 7% 25% 10%;
 }
 
-.resturants_wrapper {
+.restaurants_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-content: center;
 }
 
-.resturants_post {
+.main_restaurant-link {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    height: 600px;
+    width: inherit;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: -2px 2px 2px #000;
+}
+
+.restaurants_post {
     height: 315px;
     width: inherit;
     margin: 0.500em;
@@ -622,46 +633,52 @@ body {
     transition: .2s ease-in-out;
 }
 
-.resturants_post:hover {
+
+.restaurants_post:hover {
     transform: scale(1.02);
     transition: .2s ease-in-out;
 }
 
-.resturant-one {
+.restaurant_title {
+    font-size: 1.8em;
+    text-shadow: -2px 2px 2px #111;
+}
+
+.restaurant-one {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
     height: 650px;
     width: inherit;
     margin-right: 0.500em;
-    background: url(../images/restaurants/sushidai.jpg);
+    background: url(../images/restaurants/restaurant.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.resturant-two {
-    background: url(../images/restaurants/kawashimatofu.jpg);
+.restaurant-two {
+    background: url(../images/restaurants/restaurant2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.resturant-three {
-    background: url(../images/restaurants/inua.jpg);
+.restaurant-three {
+    background: url(../images/restaurants/restaurant3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.resturant-four {
-    background: url(../images/restaurants/kikunoi.jpg);
+.restaurant-four {
+    background: url(../images/restaurants/restaurant4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.resturant-five {
-    background: url(../images/restaurants/tofuyaukai.jpg);
+.restaurant-five {
+    background: url(../images/restaurants/restaurant5.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
