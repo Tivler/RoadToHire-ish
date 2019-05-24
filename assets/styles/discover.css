@@ -503,8 +503,61 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
-  
+    .destination_section {
+        margin: 3% 10% 10%;
+    }
+
+    
+    .destination_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 310px 310px 310px  ;
+        justify-content: center;
+    }
+
+    .destination_post {
+        max-width: none;
+    }
+
+    .main_destination-link {
+        grid-column: 1 / 6;
+        grid-row: 1 / 2;
+        width: inherit;
+        margin-bottom: 1em;
+    }   
+
+    .destination_two-link {
+        grid-column: 1 / 3;
+        grid-row: 2 / 4;
+    }
+
+    .destination_three-link {
+        grid-column: 3 / 5;
+        grid-row: 2 / 4;
+    }
+
+    .destination_four-link {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .destination_five-link {
+        grid-column: 3 / 5;
+        grid-row: 3 / 5;
+    }
+
+    .destination_six-link {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+
+    .destination_seven-link {
+        grid-column: 3 / 5;
+        grid-row: 4 / 5;
+    }
+
 }
+
 /* Activities Section Styles  ---------------- */
 
 .activities_section {
@@ -606,8 +659,49 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
-  
+    .activities_section {
+        margin: 3% 10% 10%;
+    }
+
+    
+    .activities_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 330px 330px;
+        justify-content: center;
+    }
+
+    .activities_post {
+        max-width: none;
+    }
+
+    .main_activity-link {
+        grid-column: 1 / 6;
+        grid-row: 1 / 2;
+        height: inherit;
+    }   
+
+    .activity_two-link {
+        grid-column: 1 / 3;
+        grid-row: 2 / 4;
+    }
+
+    .activity_three-link {
+        grid-column: 3 / 5;
+        grid-row: 2 / 4;
+    }
+
+    .activity_four-link {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .activity_five-link {
+        grid-column: 3 / 5;
+        grid-row: 3 / 5;
+    }
 }
+
 
 /* Resturants section Styles  ---------------- */
 
@@ -711,6 +805,50 @@ body {
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .restaurants_section {
+        margin: 3% 10% 10%;
+    }
+
+    
+    .restaurants_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 330px 330px;
+        justify-content: center;
+    }
+
+    .retaurants_post {
+        max-width: none;
+    }
+
+    .main_restaurant-link {
+        grid-column: 1 / 6;
+        grid-row: 1 / 2;
+        height: inherit;
+    }   
+
+    .restaurant_two-link {
+        grid-column: 1 / 3;
+        grid-row: 2 / 4;
+    }
+
+    .restaurant_three-link {
+        grid-column: 3 / 5;
+        grid-row: 2 / 4;
+    }
+
+    .restaurant_four-link {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .restaurant_five-link {
+        grid-column: 3 / 5;
+        grid-row: 3 / 5;
+    }
+}
+
 /* Divider section Styles  ---------------- */
 
 .divider_section {
@@ -755,6 +893,11 @@ body {
     border: 1px solid #e26f6f;
 }
 
+@media only screen and (max-width: 1200px) {
+    .divider_section {
+        height: 450px;
+    }
+}
 /* contact section Styles  ---------------- */
 
 .contact_section-wrapper {
