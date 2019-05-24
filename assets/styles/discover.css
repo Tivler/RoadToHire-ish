@@ -581,6 +581,7 @@ body {
 .divider_title {
     font-size: 3em;
     margin-bottom: 20px;
+    text-shadow: -1px 1px 1px #000;
 }
 
 .divider_button {
