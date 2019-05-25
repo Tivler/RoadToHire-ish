@@ -382,15 +382,17 @@ body {
 
 .destination_wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 600px 1fr 1fr 1fr;
+    grid-template-rows: 304px 304px;
     justify-content: center;
 }
 
-.destination_post {
-    height: 292px;
+.destination_link {
+    color: #fff;
+    text-decoration: none;
+    height: 288px;
     width: inherit;
-    min-width: 200px;
+    min-width: 150px;
     max-width: 500px;
     margin: 0.500em;
     box-shadow: -2px 2px 40px 0 rgba(0, 0, 0, 0.18);
@@ -398,29 +400,22 @@ body {
     transition: .2s ease-in-out;
 }
 
-.destination_post:hover {
+.destination_link:hover {
     transform: scale(1.02);
     transition: .2s ease-in-out;
 }
 
-.main_destination-link {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-    height: 600px;
-    min-width: 450px;
-    max-width: 1200px;
-    width: inherit;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: -2px 2px 2px #000;
+.destination_title {
+    font-size: 1.8em;
+    text-shadow: -2px 2px 2px #111;
 }
 
 .destination_one {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-    height: 600px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    height: 592px;
     width: inherit;
-    min-width: 450px;
+    min-width: 400px;
     max-width: 1200px;
     margin-right: 0.500em;
     background: url(../images/destinations/destination.jpg);
@@ -429,12 +424,9 @@ body {
     background-size: cover;
 }
 
-.destination_title {
-    font-size: 1.8em;
-    text-shadow: -2px 2px 2px #111;
-}
-
 .destination_two {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
     background: url(../images/destinations/destination2.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -442,6 +434,7 @@ body {
 }
 
 .destination_three {
+    grid-column: 3 / 4;
     background: url(../images/destinations/destination3.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -449,6 +442,7 @@ body {
 }
 
 .destination_four {
+    grid-column: 4 / 5;
     background: url(../images/destinations/destination4.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -456,6 +450,8 @@ body {
 }
 
 .destination_five {
+    grid-column: 4 / 5;
+    grid-row: 2 / 4;
     background: url(../images/destinations/destination5.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -478,36 +474,12 @@ body {
 
 @media only screen and (max-width: 1760px) {
     .destination_section {
-        margin: 3% 10%;
-    }
-}
-
-@media only screen and (max-width: 1460px) {
-    .destination_section {
-        margin: 3% 5%;
-    }
-}
-
-@media only screen and (max-width: 1300px) {
-    .destination_section {
-        margin: 3% 3%;
-    }
-
-    .destination_one {
-        min-width: 300px;
-    }
-
-    .destination_post {
-        min-width: 100px;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .destination_section {
         margin: 3% 10% 10%;
     }
+}
 
-    
+
+@media only screen and (max-width: 1330px) {  
     .destination_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -515,47 +487,108 @@ body {
         justify-content: center;
     }
 
-    .destination_post {
+    .destination_link {
         max-width: none;
     }
 
-    .main_destination-link {
+    .destination_one {
         grid-column: 1 / 6;
         grid-row: 1 / 2;
         width: inherit;
         margin-bottom: 1em;
     }   
 
-    .destination_two-link {
+    .destination_two {
         grid-column: 1 / 3;
         grid-row: 2 / 4;
     }
 
-    .destination_three-link {
+    .destination_three {
         grid-column: 3 / 5;
         grid-row: 2 / 4;
     }
 
-    .destination_four-link {
+    .destination_four {
         grid-column: 1 / 3;
         grid-row: 3 / 4;
     }
 
-    .destination_five-link {
+    .destination_five {
         grid-column: 3 / 5;
         grid-row: 3 / 5;
     }
 
-    .destination_six-link {
+    .destination_six {
         grid-column: 1 / 3;
         grid-row: 4 / 5;
     }
 
-    .destination_seven-link {
+    .destination_seven {
         grid-column: 3 / 5;
         grid-row: 4 / 5;
     }
 
+}
+
+@media only screen and (max-width: 900px) {
+    .destination_wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 420px);
+    }
+    
+    .destination_one {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }   
+
+    .destination_two {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .destination_three {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .destination_four {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .destination_five {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    .destination_six {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+
+    .destination_seven {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 8 / 9;
+    }
+
+}
+
+
+@media only screen and (max-width: 525px) {
+    .destination_section {
+        margin: 3% 4% 10%;
+    }
+
+    .destination_link {
+        min-width: 200px;
+    }
 }
 
 /* Activities Section Styles  ---------------- */
@@ -568,24 +601,14 @@ body {
 .activities_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 333px 333px;
     justify-content: center;
 }
 
-.main_activity-link {
-    grid-column: 3 / 6;
-    grid-row: 1 / 3;
-    height: 600px;
-    width: inherit;
-    min-width: 450px;
-    max-width: 1200px;
+.activity_link {
     color: #fff;
     text-decoration: none;
-    text-shadow: -2px 2px 2px #000;
-}
-
-.activities_post {
-    height: 315px;
+    height: 317px;
     width: inherit;
     margin: 0.500em;
     box-shadow: -2px 2px 40px 0 rgba(0, 0, 0, 0.18);
@@ -598,12 +621,17 @@ body {
     transition: .2s ease-in-out;
 }
 
+.activity_title {
+    padding: 12% 10%;
+    text-shadow: -2px 2px 2px #000;
+}
+
 .activity_one {
     grid-column: 3 / 6;
     grid-row: 1 / 3;
     height: 650px;
     width: inherit;
-    min-width: 450px;
+    min-width: 400px;
     max-width: 1300px;
     margin-right: 0.500em;
     background: url(../images/activities/activity.jpg);
@@ -613,6 +641,8 @@ body {
 }
 
 .activity_two {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
     background: url(../images/activities/activity2.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -642,28 +672,12 @@ body {
 
 @media only screen and (max-width: 1760px) {
     .activities_section {
-        margin: 7% 10% 7%;
+        margin: 7% 10% 10%;
     }
 }
 
-@media only screen and (max-width: 1460px) {
-    .activities_section {
-        margin: 7% 5% 7%;
-    }
-}
 
-@media only screen and (max-width: 1300px) {
-    .activities_section {
-        margin: 7% 5% 7%;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .activities_section {
-        margin: 3% 10% 10%;
-    }
-
-    
+@media only screen and (max-width: 1330px) {
     .activities_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -671,64 +685,108 @@ body {
         justify-content: center;
     }
 
-    .activities_post {
+    .activity_link {
         max-width: none;
     }
 
-    .main_activity-link {
-        grid-column: 1 / 6;
+    .activity_one {
+        grid-column: 1 / 5;
         grid-row: 1 / 2;
         height: inherit;
     }   
 
-    .activity_two-link {
+    .activity_two {
         grid-column: 1 / 3;
         grid-row: 2 / 4;
     }
 
-    .activity_three-link {
+    .activity_three {
         grid-column: 3 / 5;
         grid-row: 2 / 4;
     }
 
-    .activity_four-link {
+    .activity_four {
         grid-column: 1 / 3;
         grid-row: 3 / 4;
     }
 
-    .activity_five-link {
+    .activity_five {
         grid-column: 3 / 5;
         grid-row: 3 / 5;
     }
 }
 
+@media only screen and (max-width: 900px) {
+    .activities_wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 420px);
+        justify-content: center;
+    }
+    
+    .activity_one {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }   
 
-/* Resturants section Styles  ---------------- */
+    .activity_two {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
 
-.restaurants_section {
-    background-color: #fff;
-    margin: 7% 17% 10%;
+    .activity_three {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .activity_four {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .activity_five {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    .activity_six {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+
+    .activity_seven {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 8 / 9;
+    }
+
 }
 
-.restaurants_wrapper {
+
+/* Activities Section Styles  ---------------- */
+
+.activities_section {
+    background-color: #fff;
+    margin: 7% 17% 7%;
+}
+
+.activities_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 333px 333px;
     justify-content: center;
 }
 
-.main_restaurant-link {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-    height: 600px;
-    width: inherit;
+.activity_link {
     color: #fff;
     text-decoration: none;
-    text-shadow: -2px 2px 2px #000;
-}
-
-.restaurants_post {
-    height: 315px;
+    height: 317px;
     width: inherit;
     margin: 0.500em;
     box-shadow: -2px 2px 40px 0 rgba(0, 0, 0, 0.18);
@@ -736,117 +794,156 @@ body {
     transition: .2s ease-in-out;
 }
 
-
-.restaurants_post:hover {
+.activities_post:hover {
     transform: scale(1.02);
     transition: .2s ease-in-out;
 }
 
-.restaurant_title {
-    font-size: 1.8em;
-    text-shadow: -2px 2px 2px #111;
+.activity_title {
+    padding: 12% 10%;
+    text-shadow: -2px 2px 2px #000;
 }
 
-.restaurant-one {
-    grid-column: 1 / 3;
+.activity_one {
+    grid-column: 3 / 6;
     grid-row: 1 / 3;
     height: 650px;
     width: inherit;
+    min-width: 400px;
+    max-width: 1300px;
     margin-right: 0.500em;
-    background: url(../images/restaurants/restaurant.jpg);
+    background: url(../images/activities/activity.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.restaurant-two {
-    background: url(../images/restaurants/restaurant2.jpg);
+.activity_two {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background: url(../images/activities/activity2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.restaurant-three {
-    background: url(../images/restaurants/restaurant3.jpg);
+.activity_three {
+    background: url(../images/activities/activity3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.restaurant-four {
-    background: url(../images/restaurants/restaurant4.jpg);
+.activity_four {
+    background: url(../images/activities/activity4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.restaurant-five {
-    background: url(../images/restaurants/restaurant5.jpg);
+.activity_five {
+    background: url(../images/activities/activity5.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 @media only screen and (max-width: 1760px) {
-    .restaurants_section {
+    .activities_section {
         margin: 7% 10% 10%;
     }
 }
 
-@media only screen and (max-width: 1460px) {
-    .restaurants_section {
-        margin: 7% 5% 10%;;
-    }
-}
 
-@media only screen and (max-width: 1300px) {
-    .restaurants_section {
-        margin: 7% 3% 10%;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .restaurants_section {
-        margin: 3% 10% 10%;
-    }
-
-    
-    .restaurants_wrapper {
+@media only screen and (max-width: 1330px) {
+    .activities_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 330px 330px;
         justify-content: center;
     }
 
-    .retaurants_post {
+    .activity_link {
         max-width: none;
     }
 
-    .main_restaurant-link {
-        grid-column: 1 / 6;
+    .activity_one {
+        grid-column: 1 / 5;
         grid-row: 1 / 2;
         height: inherit;
     }   
 
-    .restaurant_two-link {
+    .activity_two {
         grid-column: 1 / 3;
         grid-row: 2 / 4;
     }
 
-    .restaurant_three-link {
+    .activity_three {
         grid-column: 3 / 5;
         grid-row: 2 / 4;
     }
 
-    .restaurant_four-link {
+    .activity_four {
         grid-column: 1 / 3;
         grid-row: 3 / 4;
     }
 
-    .restaurant_five-link {
+    .activity_five {
         grid-column: 3 / 5;
         grid-row: 3 / 5;
     }
+}
+
+@media only screen and (max-width: 900px) {
+    .activities_wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 420px);
+        justify-content: center;
+    }
+    
+    .activity_one {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }   
+
+    .activity_two {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .activity_three {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .activity_four {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .activity_five {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    .activity_six {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+
+    .activity_seven {
+        height: 400px;
+        grid-column: 1 / 2;
+        grid-row: 8 / 9;
+    }
+
 }
 
 /* Divider section Styles  ---------------- */
