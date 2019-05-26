@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tivler/RoadToHire-ish.git"
+    "url": "git+https://github.com/Tivler/roadtohire.git"
   },
   "author": "Tivler",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Tivler/RoadToHire-ish/issues"
+    "url": "https://github.com/Tivler/roadtohire/issues"
   },
-  "homepage": "https://github.com/Tivler/RoadToHire-ish#readme",
+  "homepage": "https://github.com/Tivler/roadtohire#readme",
   "dependencies": {}
 }
