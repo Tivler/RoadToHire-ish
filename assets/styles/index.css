@@ -941,8 +941,6 @@ body {
 /* Footer and Social Icon Styles  ------------------------------------------------ */
 
 .main_footer {
-    position: relative;
-    width: 100%;
     padding: 2% 0;
     background-color: #2d3240;
     color: #fff;
