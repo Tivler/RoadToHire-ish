@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 @import url('https://fonts.googleapis.com/css?family=Cambay:400,700');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400i');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 /* Universal and Body Styles ------------------------------------------------  */
 
@@ -10,23 +9,12 @@
     padding: 0;
 }
 
-html {
-    height: 100%;
-    ;
-}
-
 body {
     font-family: "Cambay", sans-serif;
     color: #fff;
+    background: #f4f4f4;
     height: 100%;
     width: 100%;
-}
-
-@media only screen and (max-width: 950px) {
-    main {
-        z-index: 99999;
-    }
-
 }
 
 /* background image Styles ------------------------------------------------  */
@@ -128,7 +116,7 @@ body {
 }
 
 .logo_text {
-    font-family: 'quicksand' , sans-serif;
+    font-family: 'Quicksand' , sans-serif;
     color: #fff;
     font-weight: 700;
     font-size: 1.35em;
@@ -286,7 +274,7 @@ body {
 }
 
 .header_title {
-    font-family: "Cambay";
+    font-family: "Cambay" , sans-serif;
     font-size: 6em;
     color: #fff;
     text-align: center;
@@ -339,7 +327,7 @@ body {
 }
 
 .section_subtext {
-    font-family: "Crimson text";
+    font-family: "Crimson text" , serif;
     font-size: 1.2em;
     line-height: 1.4;
     color: #555;
@@ -363,7 +351,6 @@ body {
 /* Destination Section Styles  ---------------- */
 
 .destination_section {
-    background-color: #fff;
     margin: 3% 17%;
 }
 
@@ -581,7 +568,6 @@ body {
 /* Activities Section Styles  ---------------- */
 
 .activities_section {
-    background-color: #fff;
     margin: 7% 17% 3%;
 }
 
@@ -611,6 +597,7 @@ body {
 .activity_title {
     padding: 12% 10%;
     text-shadow: -2px 2px 2px #000;
+    line-height: 1.4;
     align-self: center;
     text-align: center;
 }
@@ -742,7 +729,6 @@ body {
 /* Restaurants Section Styles  ---------------- */
 
 .restaurants_section {
-    background-color: #fff;
     margin: 7% 17% 10%;
 }
 

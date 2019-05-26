@@ -13,84 +13,81 @@
 </head>
 
 <body>
-    <div class="backsplash"></div>
+    
+    <nav class="main_nav">
+        <input type="checkbox" id="nav" class="hidden">
+        <div class="nav_menu-wrapper">
+            <label for="nav" class="nav_button">
+                <i></i>
+                <i></i>
+                <i></i>
+            </label>
+        </div>
+        <div class="logo_wrapper">
+            <img class="logo_image" src="../assets/images/logo.jpg" alt="Logo">
+            <a class="logo_text" href="/index.html"><div>explore</div></a>
+        </div>
+        <div class="nav_list-wrapper">
+            <ul class="nav_list">
+                <li class="nav_list-items"><a class="item_link" href="/index.html">Home</a></li>
+                <li class="nav_list-items"><a class="item_link" href="/discover.html">Discover</a></li>
+                <li class="nav_list-items"><a class="item_link" href="/subscribe.html">Newsletter</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <main>
-        <nav class="main_nav">
-            <input type="checkbox" id="nav" class="hidden">
-            <div class="nav_menu-wrapper">
-                <label for="nav" class="nav_button">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </label>
-            </div>
-            <div class="logo_wrapper">
-                <img class="logo_image" src="../assets/images/logo.jpg" alt="Logo">
-                <a class="logo_text" href="/index.html"><div>explore</div></a>
-            </div>
-            <div class="nav_list-wrapper">
-                <ul class="nav_list">
-                    <li class="nav_list-items"><a class="item_link" href="/index.html">Home</a></li>
-                    <li class="nav_list-items"><a class="item_link" href="/discover.html">Discover</a></li>
-                    <li class="nav_list-items"><a class="item_link" href="/subscribe.html">Newsletter</a></li>
-                </ul>
-            </div>
+    <header class="main_header">
+        <h1 class="header_title">Japan</h1>
+        <p class="header_description">Join Our Newsletter</p>
+    </header>
+
+    
+    <div class="form_wrap">
+        <form class="form_signup form">
+            <img class="form-logo" src="./assets/images/logo.jpg" alt="Logo">
+            <h1 class="form-title">Subscribe</h1>
+            <label for="inputFirstName"></label>
+            <input type="text" id="inputFirstName" class="form_control" placeholder="First Name" required=""
+                autofocus="">
+            <label for="inputLastName"></label>
+            <input type="text" id="inputLastName" class="form_control" placeholder="Last Name" required="">
+            <label for="inputPhoneNumber"></label>
+            <input type="text" id="inputPhoneNumber" class="form_control" placeholder="Phone Number"
+                required="">
+            <label for="inputEmail"></label>
+            <input type="email" id="inputEmail" class="form_control" placeholder="Email Address" required="">
+            <textarea id="inputMessage" class="form_control" placeholder="Leave us a message!"></textarea>
+            <button class="form_button" id="submitButton" type="submit">Submit</button>
+            <p class="form_copyright">© Explore.io</p>
+        </form>
+    </div>
+
+    <section class="contact_section-wrapper">
+        <div class="contact_wrapper">
+            <h2 class="contact_heading">Connect with us social media</h2>
+            <p class="contact_subtext">linked down below</p>
+        </div>
+    </section>
+
+    <footer id="footer" class="main_footer">
+        <nav class="footer_nav">
+            <ul class="footer_nav--list">
+                <li><a class="footer_nav--item" href="/index.html">Home</a></li>
+                <li><a class="footer_nav--item" href="/discover.html">Discover</a></li>
+                <li><a class="footer_nav--item" href="/subscribe.html">Newsletter</a></li>
+            </ul>
         </nav>
+        <div class="footer_icon--list">
+            <a class="footer_icon" href="https://www.linkedin.com/in/thomas-mckyer/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a class="footer_icon" href="https://www.instagram.com/tmckyer/" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a class="footer_icon" href="https://github.com/tivler" target="_blank"><i
+                    class="fab fa-github-square"></i></a>
+        </div>
+        <p class="copyright">2019 &copy; copyright designed and developed by Tivler</p>
+    </footer>
 
-        <header class="main_header">
-            <h1 class="header_title">Japan</h1>
-            <p class="header_description">Join Our Newsletter</p>
-        </header>
-
-        <section class="content_wrapper">
-            <div class="form_wrap">
-                <form class="form_signup form">
-                    <img class="form-logo" src="./assets/images/logo.jpg" alt="Logo">
-                    <h1 class="form-title">Subscribe</h1>
-                    <label for="inputFirstName"></label>
-                    <input type="text" id="inputFirstName" class="form_control" placeholder="First Name" required=""
-                        autofocus="">
-                    <label for="inputLastName"></label>
-                    <input type="text" id="inputLastName" class="form_control" placeholder="Last Name" required="">
-                    <label for="inputPhoneNumber"></label>
-                    <input type="text" id="inputPhoneNumber" class="form_control" placeholder="Phone Number"
-                        required="">
-                    <label for="inputEmail"></label>
-                    <input type="email" id="inputEmail" class="form_control" placeholder="Email Address" required="">
-                    <textarea id="inputMessage" class="form_control" placeholder="Leave us a message!"></textarea>
-                    <button class="form_button" id="submitButton" type="submit">Submit</button>
-                    <p class="form_copyright">© Explore.io</p>
-                </form>
-            </div>
-        </section>
-
-        <section class="contact_section-wrapper">
-            <div class="contact_wrapper">
-                <h2 class="contact_heading">Connect with us social media</h2>
-                <p class="contact_subtext">linked down below</p>
-            </div>
-        </section>
-
-        <footer id="footer" class="main_footer">
-            <nav class="footer_nav">
-                <ul class="footer_nav--list">
-                    <li><a class="footer_nav--item" href="/index.html">Home</a></li>
-                    <li><a class="footer_nav--item" href="/discover.html">Discover</a></li>
-                    <li><a class="footer_nav--item" href="/subscribe.html">Newsletter</a></li>
-                </ul>
-            </nav>
-            <div class="footer_icon--list">
-                <a class="footer_icon" href="https://www.linkedin.com/in/thomas-mckyer/" target="_blank"><i
-                        class="fab fa-linkedin"></i></a>
-                <a class="footer_icon" href="https://www.instagram.com/tmckyer/" target="_blank"><i
-                        class="fab fa-instagram"></i></a>
-                <a class="footer_icon" href="https://github.com/tivler" target="_blank"><i
-                        class="fab fa-github-square"></i></a>
-            </div>
-            <p class="copyright">2019 &copy; copyright designed and developed by Tivler</p>
-        </footer>
-    </main>
     <script src="/assets/scripts/subsribe.js""></script>
 </body>
 

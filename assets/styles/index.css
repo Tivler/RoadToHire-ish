@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 @import url('https://fonts.googleapis.com/css?family=Cambay:400,700');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400i');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 /* Universal and Body Styles ------------------------------------------------  */
 
@@ -13,6 +12,7 @@
 body {
     font-family: "Cambay", sans-serif;
     color: #fff;
+    background: #f4f4f4;
     height: 100%;
     width: 100%;
 }
@@ -288,7 +288,7 @@ body {
 }
 
 .header_title {
-    font-family: "Cambay";
+    font-family: "Cambay" , sans-serif;
     font-size: 10em;
     font-weight: 800;
     letter-spacing: -5px;
@@ -431,7 +431,6 @@ body {
 /* section one styles ------------------------------------------------ */
 
 .article_section {
-    background-color: #fff;
     margin: 3% 17% 10%;
 }
 

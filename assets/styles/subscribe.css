@@ -10,33 +10,13 @@
     padding: 0;
 }
 
-html {
-    height: 100%;
-    ;
-}
-
 body {
     font-family: "Cambay", sans-serif;
     color: #767676;
+    background: #f4f4f4;
     height: 100%;
     width: 100%;
 }
-
-
-main {
-    overflow: auto;
-}
-
-.backsplash {
-    height: 10vh;
-    background-color: rgba(241, 237, 237, .6);
-}
-
-.content_wrapper {
-    height: 1250px;
-    width: 100%;
-}
-
 
 /* Nav and logo wrapper styles ------------------------------------------------ */
 
@@ -252,22 +232,15 @@ main {
 /* Main Hero Wrapper and Heading Styles ---------------- */
 
 .main_header {
-    width: 85%;
-    position: absolute;
-    top: 250px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 110px;
+    width: 100%;
 }
 
 .header_title {
     font-family: "Cambay";
     font-size: 3.8em;
-    font-weight: 600;
-    letter-spacing: .5px;
     color: #484141;
-    width: 85vw;
     text-align: center;
-    line-height: 35px;
     animation-delay: .5s;
 }
 
@@ -296,10 +269,9 @@ main {
 /* Form Styles  ---------------- */
 
 .form_wrap {
-    position: absolute;
-    top: 850px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+   display: flex;
+   justify-content: center;
+   margin: 3% 0;
 }
 
 .form {
@@ -307,11 +279,12 @@ main {
     flex-direction: column;
     text-align: center;
     box-shadow: -2px 2px 40px 0 rgba(0, 0, 0, 0.1);
-    padding: 100px 100px 110px 100px;
+    padding: 50px 100px 100px 100px;
     justify-content: center;
     border-radius: 5px;
     animation-delay: .2s;
     width: 30em;
+    background: #fff;
 }
 
 .form-logo {
@@ -421,7 +394,6 @@ main {
     display: flex;
     justify-content: center;
     padding: 4% 25%;
-    margin-top: 40px;
 }
 
 .contact_wrapper {
