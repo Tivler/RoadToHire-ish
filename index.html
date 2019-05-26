@@ -15,22 +15,23 @@
 <body>
     <div class="background-image"></div>
 
-    <main>
         <nav class="main_nav">
             <input type="checkbox" id="nav" class="hidden">
-            <label for="nav" class="nav_button">
-                <i></i>
-                <i></i>
-                <i></i>
-            </label>
+            <div class="nav_menu-wrapper">
+                <label for="nav" class="nav_button">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </label>
+            </div>
             <div class="logo_wrapper">
                 <img class="logo_image" src="../assets/images/logo.jpg" alt="Logo">
                 <a class="logo_text" href="#"><div>explore</div></a>
             </div>
             <div class="nav_list-wrapper">
                 <ul class="nav_list">
-                    <li class="nav_list-items activities"><a class="list_item-link" href="/discover.html">Discover</a></li>
-                    <li class="nav_list-items subscribe"><a class="list_item-link" href="/subscribe.html">Newsletter</a></li>
+                    <li class="nav_list-items"><a class="item_link" href="/discover.html">Discover</a></li>
+                    <li class="nav_list-items"><a class="item_link" href="/subscribe.html">Newsletter</a></li>
                 </ul>
             </div>
         </nav>
@@ -44,6 +45,7 @@
                 <a class="button" href="/discover.html">Discover Japan</a>
             </div>
         </header>
+        
         <section class="article_section">
             <div class="story_labels">
                 <h2 class="section_title">What's Hot</h2>
@@ -206,8 +208,8 @@
         <footer class="main_footer">
             <nav class="footer_nav">
                 <ul class="footer_nav-list">
+                    <li><a class="footer_nav-item" href="/index.html">Home</a></li>
                     <li><a class="footer_nav-item" href="/discover.html">Discover</a></li>
-                    <li><a class="footer_nav-item" href="/food.html">Food</a></li>
                     <li><a class="footer_nav-item" href="/subscribe.html">Newsletter</a></li>
                 </ul>
             </nav>
@@ -221,7 +223,7 @@
             </div>
             <p class="copyright">2019 &copy; copyright designed and developed by tivler</p>
         </footer>
-    </main>
+
     <script src="/assets/scripts/index.js"></script>
 </body>
 

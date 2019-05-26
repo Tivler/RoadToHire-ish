@@ -28,7 +28,7 @@ main {
 }
 
 .backsplash {
-    height: 17vh;
+    height: 10vh;
     background-color: rgba(241, 237, 237, .6);
 }
 
@@ -38,16 +38,21 @@ main {
 }
 
 
-/* Nav and logo wrapper styles---------------- */
+/* Nav and logo wrapper styles ------------------------------------------------ */
+
 .main_nav {
     position: fixed;
     top: 0;
     color: #fff;
     height: 100px;
     width: 100%;
-    z-index: 999;
-    transition: .35s;
+    z-index: 2;
+    transition: .5s;
     background-color: rgba(35, 40, 55, 0.95);
+}
+
+.nav_menu-wrapper {
+    display: none;
 }
 
 .logo_wrapper {
@@ -63,20 +68,18 @@ main {
     align-self: center;
     margin-right: 15px;
     filter: drop-shadow(-1px 1px 1px #000);
-    z-index: 999;
 }
 
 .logo_text {
+    font-family: 'quicksand';
     color: #fff;
     font-weight: 700;
-    font-family: "quicksand";
-    display: inline;
     font-size: 1.5em;
-    letter-spacing: 1.25px;
-    align-self: center;
-    text-shadow: -2px 2px 1px #000;
-    z-index: 999;
+    letter-spacing: 1px;
     text-decoration: none;
+    text-shadow: -2px 2px 1px #000;
+    align-self: center;
+    z-index: 2;
     transition: .3s;
 }
 
@@ -92,12 +95,12 @@ main {
 .nav_list {
     display: flex;
     align-items: center;
-    float: right;
+    justify-content: flex-end;
     height: 100px;
     font-size: .95em;
 }
 
-.nav_list-items{
+.nav_list-items {
     align-items: center;
     list-style-type: none;
 }
@@ -106,15 +109,12 @@ main {
     padding-right: 40px;
 }
 
-.nav_list-items:nth-child(2) {
+.nav_list-items:nth-child(2){
     padding-right: 40px;
 }
 
-.nav_list-items:nth-child(3) {
-    padding-right: 40px;
-}
 
-.list_item-link {
+.item_link {
     font-family: "Montserrat";
     font-size: 1.15em;
     color: #fff;
@@ -122,16 +122,14 @@ main {
     text-shadow: -2px 2px 0px #000;
 }
 
-.fade {
-    opacity: .75;
+#nav:checked ~ .nav_menu-wrapper .nav_list-wrapper .nav_list {
+    display: flex;
+    flex-direction: column; 
+    height: 100vh;
+    width: 100%;
 }
 
-.fade:hover {
-    opacity: 1;
-    transition: .3s;
-}
-
-#nav:checked ~ .nav_list-wrapper .nav_list .nav_list-items .list_item-link {
+#nav:checked ~  .nav_list-wrapper .nav_list .nav_list-items .item_link {
     opacity: 1;
     display: block;
 }
@@ -162,55 +160,47 @@ main {
 @media only screen and (max-width: 950px) {
     .nav_list-wrapper {
         left: 0;
-        width: 100%;
-        height: 100%;
         transition: all 0.3s ease;
         z-index: -1;
     }
 
     .nav_list {
-        display: flex;
-        flex-direction: column;  
-        height: 100vh;
-        width: 100%;
+        display: block;
+        text-align: center;
+        height: 100px;
+        font-size: .95em;
     }
 
     .nav_list-items:first-child {
-        margin-top: 25%;
+        margin: 20% 0 10% 0;
+        padding-right: 0px;
+    }
+
+    .nav_list-items:nth-child(2){
+        margin: 0 0 10% 0;
         padding-right: 0px;
     }
     
-    .nav_list-items:nth-child(2) {
-        margin-top: 10%;
-        padding-right: 0px;
-    }
-
-    .nav_list-items:nth-child(3) {
-        margin-top: 10%;
-        padding-right: 0px;
-    }
-
-    .nav_list-items:nth-child(4) {
-        margin-top: 10%;
-    }
-
-    .list_item-link {
+    .item_link {
         display: none;
         font-size: 1.8em;
         opacity: 0;
     }
 
+    .nav_menu-wrapper {
+        display: flex;
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        align-items: center;
+    }
+
     .nav_button {
         position: fixed;
         right: 0;
-        top: 2.3em;
-        display:inline-block;
-        width: fit-content;
-        height: fit-content;
         cursor: pointer;
         margin-right: 14%;
         z-index: 9999;
-        border-radius: 50%;
     }
 
     .nav_button i {
@@ -220,7 +210,6 @@ main {
         background: #fff;
         box-shadow: -2px 2px 1px #000;
         border-radius: 2px;
-        margin-left: 14px;
     }
 
     .nav_button i:nth-child(2) {
@@ -258,13 +247,12 @@ main {
     }
 }
 
-
 /* Main Hero Wrapper and Heading Styles ---------------- */
 
 .main_header {
     width: 85%;
     position: absolute;
-    top: 310px;
+    top: 250px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -304,9 +292,10 @@ main {
 }
 
 /* Form Styles  ---------------- */
+
 .form_wrap {
     position: absolute;
-    top: 875px;
+    top: 850px;
     left: 50%;
     transform: translate(-50%, -50%);
 }

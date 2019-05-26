@@ -10,10 +10,6 @@
     padding: 0;
 }
 
-html {
-    height: 100%;
-}
-
 body {
     font-family: "Cambay", sans-serif;
     color: #fff;
@@ -31,7 +27,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    z-index: -999999;
 }
 
 .background-image::before {
@@ -41,7 +36,6 @@ body {
     height: 65vh;
     opacity: 0.09;
     width: 100%;
-    z-index: 1;
 }
 
 @media only screen and (max-width: 1440px) and (max-height: 1400px) {
@@ -91,13 +85,17 @@ body {
     color: #fff;
     height: 100px;
     width: 100%;
-    z-index: 999;
-    transition: .35s;
+    z-index: 2;
+    transition: .5s;
 }
 
 .main_nav.blue {
     background-color: rgba(35, 40, 55, 0.95);
     height: 100px;
+}
+
+.nav_menu-wrapper {
+    display: none;
 }
 
 .logo_wrapper {
@@ -113,7 +111,6 @@ body {
     align-self: center;
     margin-right: 15px;
     filter: drop-shadow(-1px 1px 1px #000);
-    z-index: 999;
 }
 
 .logo_text {
@@ -121,11 +118,11 @@ body {
     color: #fff;
     font-weight: 700;
     font-size: 1.5em;
-    letter-spacing: 1.25px;
-    align-self: center;
-    text-shadow: -2px 2px 1px #000;
-    z-index: 999;
+    letter-spacing: 1px;
     text-decoration: none;
+    text-shadow: -2px 2px 1px #000;
+    align-self: center;
+    z-index: 2;
     transition: .3s;
 }
 
@@ -136,13 +133,12 @@ body {
     height: 100px;
     width: 100%;
     margin-right: 14%;
-    z-index: 99999;
 }
 
 .nav_list {
     display: flex;
     align-items: center;
-    float: right;
+    justify-content: flex-end;
     height: 100px;
     font-size: .95em;
 }
@@ -156,11 +152,8 @@ body {
     padding-right: 40px;
 }
 
-.nav_list-items:nth-child(2) {
-    padding-right: 40px;
-}
 
-.list_item-link {
+.item_link {
     font-family: "Montserrat";
     font-size: 1.15em;
     color: #fff;
@@ -168,14 +161,14 @@ body {
     text-shadow: -2px 2px 0px #000;
 }
 
-#nav:checked ~ .nav_list-wrapper .nav_list {
+#nav:checked ~ .nav_menu-wrapper .nav_list-wrapper .nav_list {
     display: flex;
     flex-direction: column; 
     height: 100vh;
     width: 100%;
 }
 
-#nav:checked ~ .nav_list-wrapper .nav_list .nav_list-items .list_item-link {
+#nav:checked ~  .nav_list-wrapper .nav_list .nav_list-items .item_link {
     opacity: 1;
     display: block;
 }
@@ -210,37 +203,38 @@ body {
         z-index: -1;
     }
 
+    .nav_list {
+        display: block;
+        text-align: center;
+        height: 100px;
+        font-size: .95em;
+    }
+
     .nav_list-items:first-child {
-        margin-top: 25%;
+        margin: 20% 0 10% 0;
         padding-right: 0px;
     }
     
-    .nav_list-items:nth-child(2) {
-        margin-top: 10%;
-        padding-right: 0px;
-    }
-
-    .nav_list-items:nth-child(3) {
-        margin-top: 10%;
-    }
-
-    .list_item-link {
+    .item_link {
         display: none;
         font-size: 1.8em;
         opacity: 0;
     }
 
+    .nav_menu-wrapper {
+        display: flex;
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        align-items: center;
+    }
+
     .nav_button {
         position: fixed;
         right: 0;
-        top: 35%;
-        display:inline-block;
-        width: fit-content;
-        height: fit-content;
         cursor: pointer;
         margin-right: 14%;
         z-index: 9999;
-        border-radius: 50%;
     }
 
     .nav_button i {
@@ -250,7 +244,6 @@ body {
         background: #fff;
         box-shadow: -2px 2px 1px #000;
         border-radius: 2px;
-        margin-left: 14px;
     }
 
     .nav_button i:nth-child(2) {
@@ -297,11 +290,10 @@ body {
     justify-content: center;
     position: absolute;
     height: 65vh;
-    width: 60%;
+    width: 50%;
     top: 32.5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
 }
 
 .header_title {
@@ -312,7 +304,7 @@ body {
     color: #fff;
     line-height: 35px;
     text-shadow: -2px 2px 2px #000;
-    width: 60%;
+    width: 80%;
     align-self: center;
     text-align: center;
     animation-delay: .5s;
@@ -322,7 +314,7 @@ body {
     content: "";
     display: block;
     position: absolute;
-    height: 1px;
+    height: 1.45px;
     width: 100%;
     background-color: #e26f6f;
     z-index: -1;
@@ -330,12 +322,12 @@ body {
 
 .header_description {
     font-family: "Cambay";
-    font-weight: 700;
+    font-weight: 600;
     color: #fff;
-    font-size: 1.575em;
+    font-size: 1.6em;
     text-align: center;
     line-height: 1.5em;
-    letter-spacing: 2.275px;
+    letter-spacing: 1.25px;
     text-shadow: -2px 2px 2px #000;
     margin-top: 3.5em;
     animation-delay: .3s;
@@ -348,32 +340,29 @@ body {
 
 .button {
     color: #fff;;
-    line-height: 1px;
     font-size: 1.2em;
     text-decoration: none;
-    text-align: center;
-    border: 1px solid #fff;
-    border-radius: 3px;
-    margin-top: 2em;
-    padding: 28px 40px 25px;
+    border-radius: 5px;
+    margin-top: 1.5em;
+    padding: 22px 40px 18px;
     background-color: #e26f6f;
-    border: 1px solid #e26f6f;
     transition: .3s;
 }
 
 
-@media only screen and (max-width: 1980px) and (max-height: 1100px) {
+@media only screen and (max-width: 1980px) and (max-height: 1100px) {   
     .main_header {
-        top: 38;
+        top: 36%;
     }
     
     .header_title {
-        font-size: 7em;
+        font-size: 9em;
     }
 
     .header_description {
-        font-size: 1.5em;
-        margin-top: 2.5em;
+        font-size: 1.6em;
+        margin-top: 3.5em;
+        width: 100%;
     }
 
     .button {
@@ -389,17 +378,8 @@ body {
 
 @media only screen and (max-width: 950px) {
     .header_title {
-        font-size: 6em;
-    }
-
-    .header_description {
-        font-size: 1.25em;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    .header_title {
-        font-size: 5em;
+        font-size: 9em;
+        width: 100%;
     }
 
     .header_title::after {
@@ -407,34 +387,51 @@ body {
     }
 
     .header_description {
-        font-size: 1em;
+        font-size: 1.45em;
+    }
+
+    .button {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .main_header {
+        width: 80vw;
+    }
+    
+    .header_title {
+        font-size: 8em;
+    }
+
+    .header_description {
+        font-size: 1.3em;
+    }
+
+    .button {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 425px) {
 
     .header_title {
-        font-size: 3.75em;
+        font-size: 6em;
     }
 
     .header_description {
-        font-size: .95em;
+        font-size: 1.1em;
     }
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 330px) {
 
     .header_title {
-        font-size: 3.4em;
+        font-size: 4em;
     }
 
     .header_description {
-        font-size: .90em;
-    }
-}
-
-@media only screen and (max-width: 340px) {
-    .button {
         font-size: 1em;
     }
 }

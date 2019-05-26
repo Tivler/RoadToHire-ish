@@ -29,8 +29,6 @@ body {
 
 }
 
-
-
 /* background image Styles ------------------------------------------------  */
 
 .background-image {
@@ -61,13 +59,17 @@ body {
     color: #fff;
     height: 100px;
     width: 100%;
-    z-index: 999;
-    transition: .35s;
+    z-index: 2;
+    transition: .5s;
 }
 
 .main_nav.blue {
     background-color: rgba(35, 40, 55, 0.95);
     height: 100px;
+}
+
+.nav_menu-wrapper {
+    display: none;
 }
 
 .logo_wrapper {
@@ -83,20 +85,18 @@ body {
     align-self: center;
     margin-right: 15px;
     filter: drop-shadow(-1px 1px 1px #000);
-    z-index: 999;
 }
 
 .logo_text {
+    font-family: 'quicksand';
     color: #fff;
-    font-family: 'Quicksand';
     font-weight: 700;
-    display: inline;
     font-size: 1.5em;
-    letter-spacing: 1.25px;
-    align-self: center;
-    text-shadow: -2px 2px 1px #000;
-    z-index: 999;
+    letter-spacing: 1px;
     text-decoration: none;
+    text-shadow: -2px 2px 1px #000;
+    align-self: center;
+    z-index: 2;
     transition: .3s;
 }
 
@@ -112,12 +112,12 @@ body {
 .nav_list {
     display: flex;
     align-items: center;
-    float: right;
+    justify-content: flex-end;
     height: 100px;
     font-size: .95em;
 }
 
-.nav_list-items{
+.nav_list-items {
     align-items: center;
     list-style-type: none;
 }
@@ -126,15 +126,12 @@ body {
     padding-right: 40px;
 }
 
-.nav_list-items:nth-child(2) {
+.nav_list-items:nth-child(2){
     padding-right: 40px;
 }
 
-.nav_list-items:nth-child(3) {
-    padding-right: 40px;
-}
 
-.list_item-link {
+.item_link {
     font-family: "Montserrat";
     font-size: 1.15em;
     color: #fff;
@@ -142,16 +139,14 @@ body {
     text-shadow: -2px 2px 0px #000;
 }
 
-.fade {
-    opacity: .75;
+#nav:checked ~ .nav_menu-wrapper .nav_list-wrapper .nav_list {
+    display: flex;
+    flex-direction: column; 
+    height: 100vh;
+    width: 100%;
 }
 
-.fade:hover {
-    opacity: 1;
-    transition: .3s;
-}
-
-#nav:checked ~ .nav_list-wrapper .nav_list .nav_list-items .list_item-link {
+#nav:checked ~  .nav_list-wrapper .nav_list .nav_list-items .item_link {
     opacity: 1;
     display: block;
 }
@@ -182,55 +177,47 @@ body {
 @media only screen and (max-width: 950px) {
     .nav_list-wrapper {
         left: 0;
-        width: 100%;
-        height: 100%;
         transition: all 0.3s ease;
         z-index: -1;
     }
 
     .nav_list {
-        display: none;
-        display: flex;
-        flex-direction: column;  
-        width: 100%;
+        display: block;
+        text-align: center;
+        height: 100px;
+        font-size: .95em;
     }
 
     .nav_list-items:first-child {
-        margin-top: 25%;
+        margin: 20% 0 10% 0;
+        padding-right: 0px;
+    }
+
+    .nav_list-items:nth-child(2){
+        margin: 0 0 10% 0;
         padding-right: 0px;
     }
     
-    .nav_list-items:nth-child(2) {
-        margin-top: 10%;
-        padding-right: 0px;
-    }
-
-    .nav_list-items:nth-child(3) {
-        margin-top: 10%;
-        padding-right: 0px;
-    }
-
-    .nav_list-items:nth-child(4) {
-        margin-top: 10%;
-    }
-
-    .list_item-link {
+    .item_link {
         display: none;
         font-size: 1.8em;
         opacity: 0;
     }
 
+    .nav_menu-wrapper {
+        display: flex;
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        align-items: center;
+    }
+
     .nav_button {
         position: fixed;
         right: 0;
-        top: 2.3em;
-        display:inline-block;
-        width: fit-content;
-        height: fit-content;
         cursor: pointer;
         margin-right: 14%;
         z-index: 9999;
-        border-radius: 50%;
     }
 
     .nav_button i {
@@ -240,7 +227,6 @@ body {
         background: #fff;
         box-shadow: -2px 2px 1px #000;
         border-radius: 2px;
-        margin-left: 14px;
     }
 
     .nav_button i:nth-child(2) {
@@ -278,24 +264,6 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Main Hero Wrapper and Heading Styles ---------------- */
 
 .main_header {
@@ -309,22 +277,35 @@ body {
 .header_title {
     font-family: "Cambay";
     font-size: 6em;
-    font-weight: 600;
-    letter-spacing: .5px;
     color: #fff;
-    width: 85vw;
     text-align: center;
     text-shadow: -2px 2px 2px #000;
-    line-height: 35px;
     animation-delay: .4s;
 }
 
+@media only screen and (max-width: 950px) {
+    .header_title {
+        font-size: 5em;
+    }
+}
 
+@media only screen and (max-width: 750px) {
+    .header_title {
+        font-size: 4em;
+    }
+}
 
+@media only screen and (max-width: 550px) {
+    .header_title {
+        font-size: 3em;
+    }
+}
 
-
-
-
+@media only screen and (max-width: 385px) {
+    .header_title {
+        line-height: 1em;
+    }
+}
 
 /* Section labels and universal section styles ---------------- */
         
@@ -361,7 +342,6 @@ body {
     justify-content: center;
     height: inherit;
  }
-
 
 /* Destination Section Styles  ---------------- */
 
@@ -686,7 +666,7 @@ body {
     .activity_one {
         grid-column: 1 / 5;
         grid-row: 1 / 2;
-        height: inherit;
+        height: 400px;
     }   
 
     .activity_two {
@@ -749,7 +729,6 @@ body {
     }
 }
 
-
 /* Restaurants Section Styles  ---------------- */
 
 .restaurants_section {
@@ -794,7 +773,7 @@ body {
     min-width: 400px;
     max-width: 1300px;
     margin-right: 0.500em;
-    background: url(../images/activities/activity.jpg);
+    background: url(../images/restaurants/restaurant.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -803,28 +782,28 @@ body {
 .restaurant_two {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    background: url(../images/activities/activity2.jpg);
+    background: url(../images/restaurants/restaurant2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .restaurant_three {
-    background: url(../images/activities/activity3.jpg);
+    background: url(../images/restaurants/restaurant3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .restaurant_four {
-    background: url(../images/activities/activity4.jpg);
+    background: url(../images/restaurants/restaurant4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .restaurant_five {
-    background: url(../images/activities/activity5.jpg);
+    background: url(../images/restaurants/restaurant5.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -852,7 +831,7 @@ body {
     .restaurant_one {
         grid-column: 1 / 5;
         grid-row: 1 / 2;
-        height: inherit;
+        height: 400px;
     }   
 
     .restaurant_two {
@@ -972,6 +951,7 @@ body {
  }
 
 }
+
 /* contact section Styles  ---------------- */
 
 .contact_section-wrapper {
@@ -1031,7 +1011,6 @@ body {
         text-align: center;
     }
  }
-
 
 /* Footer and Social Icon Styles  ---------------- */
 
