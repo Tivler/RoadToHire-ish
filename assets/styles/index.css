@@ -20,7 +20,7 @@ body {
 /* Hero Image Styles ------------------------------------------------  */
 
 .background-image {
-    background: url(/assets/images/heros/discover-hero.jpg);
+    background: url(/assets/images/heros/main-hero.jpg);
     height: 65vh;
     width: 100%;
     background-position: center;
@@ -34,7 +34,7 @@ body {
     display: block;
     background-color: #000;
     height: 65vh;
-    opacity: 0.15;
+    opacity: 0.3;
     width: 100%;
 }
 
@@ -132,12 +132,12 @@ body {
 }
 
 .logo_image {
-    height: 2em;
-    width: 2em;
-    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius:100%;
     align-self: center;
     margin-right: 10px;
-    filter: drop-shadow(-1px 1px 1px #000);
+    filter: drop-shadow(-1px 0 1px #000);
 }
 
 .logo_text {

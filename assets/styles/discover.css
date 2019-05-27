@@ -22,8 +22,8 @@ body {
 .background-image {
     height: 65vh;
     width: 100%;
-    background: url(../images/heros/clouds-dawn-desktop-backgrounds-46253-min.jpg);
-    background-position: bottom;
+    background: url(../images/heros/discover-hero.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -34,7 +34,7 @@ body {
     display: block;
     background-color: #000;
     height: 65vh;
-    opacity: 0.09;
+    opacity: 0.2;
     width: 100%;
     z-index: 1;
 }
@@ -107,9 +107,9 @@ body {
 }
 
 .logo_image {
-    height: 2em;
-    width: 2em;
-    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius:100%;
     align-self: center;
     margin-right: 10px;
     filter: drop-shadow(-1px 1px 1px #000);
@@ -892,7 +892,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 550px;
+    height: 350px;
     width: 100%;
     background: url(../images/divider/stuff.jpg);
     background-position: center;
@@ -900,7 +900,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     border-bottom: 20px solid #e26f6f;
-    margin-bottom: 5.25%;
+    margin-bottom: 7%;
 }
 
 .subscribe_content {

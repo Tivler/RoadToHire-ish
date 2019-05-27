@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 @import url('https://fonts.googleapis.com/css?family=Cambay:400,700');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400i');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
 
 /* Universal and Body Styles ---------------- */
 
@@ -69,9 +69,9 @@ body {
 }
 
 .logo_image {
-    height: 2em;
-    width: 2em;
-    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius:100%;
     align-self: center;
     margin-right: 10px;
     filter: drop-shadow(-1px 1px 1px #000);
@@ -295,7 +295,7 @@ body {
 
 .form-title {
     text-transform: uppercase;
-    font-family: "Roboto";
+    font-family: "Roboto" , sans-serif;
     color: #484141;
     margin-top: 2px;
 }
