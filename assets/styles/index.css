@@ -368,6 +368,12 @@ body {
     }
 }
 
+@media only screen and (max-width: 1024px) and (max-height: 768px) {
+     .button {
+        display: none;
+    }
+ }
+
 @media only screen and (max-width: 1440px) {
     .main_header {
         top: 50%;
@@ -392,6 +398,16 @@ body {
         width: 50%;
         text-align: center;
     }
+}
+
+@media only screen and (max-width: 825px) and (max-height: 425px) {
+    .header_title {
+        font-size: 5em;
+    }
+    
+    .header_description {
+       display: none;
+   }
 }
 
 @media only screen and (max-width: 640px) {
