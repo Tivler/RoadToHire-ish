@@ -21,6 +21,7 @@ body {
 
 .background-image {
     background: url(/assets/images/heros/main-hero.jpeg);
+    background-color: linear-gradient(to left bottom, #051937, #3e205b, #850464, #c5004c, #eb1212);
     height: 65vh;
     width: 100%;
     background-position: center;
@@ -46,6 +47,12 @@ body {
     .background-image::before {
         height: 100vh;
     }
+}
+
+@media only screen and (max-width: 1330px) {
+   .background-image {
+       background-attachment: scroll;
+   }
 }
 
 /* Section Divider Tags Styles ------------------------------------------------  */
