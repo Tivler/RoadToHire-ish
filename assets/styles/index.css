@@ -20,7 +20,7 @@ body {
 /* Hero Image Styles ------------------------------------------------  */
 
 .background-image {
-    background: url(/assets/images/heros/main-hero.jpg);
+    background: url(/assets/images/heros/main-hero.jpeg);
     height: 65vh;
     width: 100%;
     background-position: center;
