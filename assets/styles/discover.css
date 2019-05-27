@@ -314,6 +314,10 @@ body {
 }
 
 @media only screen and (max-width: 385px) {
+    .main_header {
+        top: 34%;
+    }
+    
     .header_title {
         line-height: 1em;
     }
