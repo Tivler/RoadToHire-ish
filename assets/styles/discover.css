@@ -288,15 +288,16 @@ body {
     animation-delay: .4s;
 }
 
-@media only screen and (max-width: 980px) and (max-height: 661px) {
-   .button {
-       display: none;
-   }
-}
 
 @media only screen and (max-width: 950px) {
     .header_title {
         font-size: 5em;
+    }
+}
+
+@media only screen and (max-width: 825px) and (max-height: 425px) {
+    .header_title {
+        font-size: 2.5em;
     }
 }
 
@@ -738,6 +739,16 @@ body {
     }
 }
 
+@media only screen and (max-width: 525px) {
+    .activities_section {
+        margin: 3% 4% 10%;
+    }
+
+    .activity_link {
+        min-width: 200px;
+    }
+}
+
 /* Restaurants Section Styles  ---------------- */
 
 .restaurants_section {
@@ -896,6 +907,16 @@ body {
         grid-row: 5 / 6;
     }
 
+}
+
+@media only screen and (max-width: 525px) {
+    .restaurants_section {
+        margin: 3% 4% 10%;
+    }
+
+    .restaurant_link {
+        min-width: 200px;
+    }
 }
 
 /* subscribe section Styles  ---------------- */
