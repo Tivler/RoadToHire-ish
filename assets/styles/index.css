@@ -429,10 +429,6 @@ body {
 }
 
 @media only screen and (max-width: 425px) {
-    .main_header {
-        top: 90%;
-    }
-
     .header_title {
         font-size: 6em;
     }
