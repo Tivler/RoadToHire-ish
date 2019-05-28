@@ -180,6 +180,12 @@ body {
     width: 100%;
 }
 
+@media only screen and (max-width: 1440px) and (max-height: 1400px) {
+    .nav_list {
+        font-size: .75em;
+    }
+ }
+
 @media only screen and (max-width: 950px) {
     .nav_list-wrapper {
         left: 0;
@@ -288,6 +294,11 @@ body {
     animation-delay: .4s;
 }
 
+@media only screen and (max-width: 1440px) and (max-height: 1400px) {
+    .header_title {
+        font-size: 4em;
+    }
+}
 
 @media only screen and (max-width: 950px) {
     .header_title {
@@ -358,6 +369,16 @@ body {
     justify-content: center;
     height: inherit;
  }
+
+ @media only screen and (max-width: 1440px) and (max-height: 1400px) {
+    .section_title {
+       font-size: 1em;
+    }
+
+    .section_subtext {
+        font-size: .9em;
+    }
+}
 
  @media only screen and (max-width: 900px) {
     .section_subtext {
@@ -471,6 +492,11 @@ body {
     }
 }
 
+@media only screen and (max-width: 1440px) and (max-height: 1400px) {
+    .destination_title {
+        font-size: 1.2em;
+    }
+}
 
 @media only screen and (max-width: 1330px) {  
     .destination_wrapper {
@@ -669,6 +695,11 @@ body {
     }
 }
 
+@media only screen and (max-width: 1440px) and (max-height: 1400px) {
+    .activity_title {
+        font-size: 1.1em;
+    }
+}
 
 @media only screen and (max-width: 1330px) {
     .activities_wrapper {
@@ -838,6 +869,11 @@ body {
     }
 }
 
+@media only screen and (max-width: 1440px) and (max-height: 1400px) {
+    .restaurant_title {
+        font-size: 1.2em;
+    }
+}
 
 @media only screen and (max-width: 1330px) {
     .restaurants_wrapper {
@@ -967,11 +1003,12 @@ body {
     border: 1px solid #e26f6f;
 }
 
-@media only screen and (max-width: 1330px) {
+@media only screen and (max-width: 1440px) and (max-height: 1400px) {
     .subscribe_section {
         display: none;
-    }
+  }
 }
+
 
 /* contact section Styles  ---------------- */
 
@@ -1002,12 +1039,11 @@ body {
     text-align: center;
 }
 
-
-@media only screen and (max-width: 1340px) {
+@media only screen and (max-width: 1440px) and (max-height: 1400px) {
     .contact_heading {
-        font-size: 2em;
-    }
- }
+      font-size: 2em;
+  }
+}
 
  @media only screen and (max-width: 915px) {
     .contact_section-wrapper {

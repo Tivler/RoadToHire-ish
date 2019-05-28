@@ -84,6 +84,16 @@ body {
     margin-bottom: 2%;
 }
 
+@media only screen and (max-width: 1440px) and (max-height: 1400px) {
+    .section_title {
+       font-size: 1em;
+    }
+
+    .section_subtext {
+        font-size: .9em;
+    }
+}
+
 /* Nav and logo wrapper styles ------------------------------------------------ */
 
 .main_nav {
@@ -195,6 +205,12 @@ body {
     text-shadow: -2px 2px 0px #000;
 }
 
+@media only screen and (max-width: 1440px) and (max-height: 1400px) {
+    .nav_list {
+        font-size: .75em;
+    }
+ }
+
 @media only screen and (max-width: 950px) {
     .nav_list-wrapper {
         left: 0;
@@ -256,17 +272,16 @@ body {
         height: 100vh;
         background-color: rgba(35, 40, 55, 0.98);
     }
+
+    .logo_image {
+        display: none;
+    }
+ 
+    .logo_text {
+        font-size: 1.7em
+    }
 }
 
-@media only screen and (max-width: 950px) {
-   .logo_image {
-       display: none;
-   }
-
-   .logo_text {
-       font-size: 1.7em
-   }
-}
 
 @media only screen and (max-width: 570px) {
    .logo_text {
@@ -367,6 +382,16 @@ body {
         margin-top: 1em;
     }
 }
+
+@media only screen and (max-width: 1440px) and (max-height: 1400px) {   
+    .header_title {
+       font-size: 6.5em;
+   }
+
+   .header_description {
+       font-size: 1.1em;
+   }
+ }
 
 @media only screen and (max-width: 1024px) and (max-height: 768px) {
      .button {
@@ -605,6 +630,16 @@ body {
     }
 }
 
+@media only screen and (max-width: 1440px) and (max-height: 1400px) {
+    .post_heading {
+        font-size: 1em;
+    }
+    
+    .post_description {
+        font-size: .8em;
+    }
+}
+
 
 @media only screen and (max-width: 1330px) {
     .article_wrapper {
@@ -713,7 +748,7 @@ body {
 .video_link {
     color: #fff;
     font-family: "Cambay";
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 800;
     letter-spacing: 1px;
     text-shadow: -2px 2px 1px #777;
@@ -777,10 +812,12 @@ body {
         height: 393.750px !important;
         width: 700px;
     }
+}
 
-    .video_link {
-        font-size: 2em;
-    }
+@media only screen and (max-width: 1440px) and (max-height: 1400px) {
+   .video_link {
+      font-size: 1.5em;
+   }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -860,6 +897,16 @@ body {
     }
 }
 
+@media only screen and (max-width: 1440px) and (max-height: 1400px) {
+    .content_paragraph {
+        font-size: 14px;
+    }
+
+    .content_heading {
+        font-size: 1em;
+    }
+ }
+
 @media only screen and (max-width: 1300px) {
     .content_paragraph {
         width: 98%;
@@ -906,10 +953,8 @@ body {
 .contact_subtext {
     text-align: center;
 }
-
-
-@media only screen and (max-width: 1340px) {
-    .contact_heading {
+@media only screen and (max-width: 1440px) and (max-height: 1400px) {
+      .contact_heading {
         font-size: 2em;
     }
  }
