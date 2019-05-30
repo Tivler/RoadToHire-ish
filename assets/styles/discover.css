@@ -819,7 +819,6 @@ body {
 }
 
 .restaurant_title {
-    text-shadow: -2px 2px 2px #000;
     align-self: center;
     text-align: center;
 }
@@ -1049,29 +1048,41 @@ body {
   }
 }
 
- @media only screen and (max-width: 915px) {
-    .contact_section-wrapper {
-        padding: 5% 25%;
-    }
- }
+@media only screen and (max-width: 915px) {
+  .contact_section-wrapper {
+      padding: 5% 25%;
+  }
+}
 
- @media only screen and (max-width: 600px) {
-    .contact_section-wrapper {
-        margin-top: 0;
-        padding: 7% 25%;
-    }
- }
+@media only screen and (max-width: 600px) {
+  .contact_section-wrapper {
+      margin-top: 0;
+      padding: 7% 25%;
+  }
+}
 
- @media only screen and (max-width: 320px) {
-    .contact_heading {
-        font-size: 1em;
-    }
+@media only screen and (max-width: 475px) {
+  .contact_heading {
+      font-size: 1.4em;
+  }
 
-    .contact_subtext {
-        font-size: .9em;
-        text-align: center;
-    }
- }
+  .contact_subtext {
+      font-size: .9em;
+      text-align: center;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .contact_heading {
+      font-size: 1em;
+  }
+
+  .contact_subtext {
+      font-size: .9em;
+      text-align: center;
+  }
+}
+
 
 /* Footer and Social Icon Styles  ---------------- */
 
