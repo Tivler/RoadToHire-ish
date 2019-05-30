@@ -426,7 +426,6 @@ body {
 
 .destination_title {
     font-size: 1.8em;
-    text-shadow: -2px 2px 2px #111;
     align-self: center;
     text-align: center;
 }
@@ -646,7 +645,6 @@ body {
 
 .activity_title {
     padding: 12% 10%;
-    text-shadow: -2px 2px 2px #000;
     line-height: 1.4;
     align-self: center;
     text-align: center;
@@ -990,7 +988,6 @@ body {
 .subscribe_title {
     font-size: 3em;
     margin-bottom: 20px;
-    text-shadow: -1px 1px 1px #000;
 }
 
 .subscribe_button {
