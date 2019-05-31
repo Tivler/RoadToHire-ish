@@ -108,6 +108,13 @@ body {
     display: none;
 }
 
+#nav:checked ~ .nav_menu-wrapper .nav_list-wrapper .nav_list {
+    display: flex;
+    flex-direction: column; 
+    height: 100vh;
+    width: 100%;
+}
+
 #nav:checked ~  .nav_list-wrapper .nav_list .nav_list-items .item_link {
     opacity: 1;
     display: block;
@@ -147,11 +154,11 @@ body {
     border-radius:100%;
     align-self: center;
     margin-right: 10px;
-    filter: drop-shadow(-1px 0 1px #000);
+    filter: drop-shadow(-1px 1px 1px #000);
 }
 
 .logo_text {
-    font-family: 'quicksand', sans-serif;
+    font-family: 'Quicksand' , sans-serif;
     color: #fff;
     font-weight: 700;
     font-size: 1.35em;
@@ -175,17 +182,21 @@ body {
 .nav_list {
     display: flex;
     align-items: center;
-    height: 90px;
     justify-content: flex-end;
+    height: 90px;
     font-size: .8em;
 }
 
-.nav_list-items{
+.nav_list-items {
     align-items: center;
     list-style-type: none;
 }
 
 .nav_list-items:first-child {
+    padding-right: 40px;
+}
+
+.nav_list-items:nth-child(2){
     padding-right: 40px;
 }
 
@@ -200,8 +211,20 @@ body {
     transition: .6s;
 }
 
+.active {
+    color: #e34e4e;
+}
+
 .item_link:hover {
     color: #e34e4e;
+}
+
+
+#nav:checked ~ .nav_menu-wrapper .nav_list-wrapper .nav_list {
+    display: flex;
+    flex-direction: column; 
+    height: 100vh;
+    width: 100%;
 }
 
 @media only screen and (max-width: 1440px) and (max-height: 1400px) {
@@ -225,6 +248,11 @@ body {
 
     .nav_list-items:first-child {
         margin: 20% 0 10% 0;
+        padding-right: 0px;
+    }
+
+    .nav_list-items:nth-child(2){
+        margin: 0 0 10% 0;
         padding-right: 0px;
     }
     
@@ -271,24 +299,24 @@ body {
         height: 100vh;
         background-color: rgba(35, 40, 55, 0.98);
     }
-
-    .logo_image {
-        display: none;
-    }
- 
-    .logo_text {
-        font-size: 1.7em
-    }
 }
 
+@media only screen and (max-width: 950px) {
+   .logo_image {
+       display: none;
+   }
 
-@media only screen and (max-width: 570px) {
+   .logo_text {
+       font-size: 1.7em
+   }
+}
+
+@media only screen and (max-width: 570px) { 
     .nav_list-items:first-child {
         margin-top: 45%;
         padding-right: 0px;
     }
 }
-
 
 /* Main Hero Wrapper and Heading Styles ------------------------------------------------  */
 
