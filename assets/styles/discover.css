@@ -281,6 +281,10 @@ body {
         padding-right: 0px;
     }
 
+    .item_link {
+        font-size: 1.2em;
+    }
+
     .logo_text {
         font-size: 1.3em;
     }
