@@ -280,6 +280,10 @@ body {
         margin-top: 45%;
         padding-right: 0px;
     }
+
+    .logo_text {
+        font-size: 1.3em;
+    }
 }
 
 /* Main Hero Wrapper and Heading Styles ---------------- */
