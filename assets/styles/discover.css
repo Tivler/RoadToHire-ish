@@ -166,12 +166,23 @@ body {
 
 
 .item_link {
-    font-family: "Quicksand" , sans-serif;
+    font-family: 'Cambay', sans-serif;
     font-size: 1.25em;
+    font-weight: 400;
     color: #fff;
     text-decoration: none;
-    text-shadow: -2px 2px 0px #000;
+    text-shadow: -1px 2px 2px #000;
+    transition: .6s;
 }
+
+.active {
+    color: #e34e4e;
+}
+
+.item_link:hover {
+    color: #e34e4e;
+}
+
 
 #nav:checked ~ .nav_menu-wrapper .nav_list-wrapper .nav_list {
     display: flex;
@@ -264,11 +275,7 @@ body {
    }
 }
 
-@media only screen and (max-width: 570px) {
-   .logo_text {
-       z-index: -999;
-   }
-   
+@media only screen and (max-width: 570px) { 
     .nav_list-items:first-child {
         margin-top: 45%;
         padding-right: 0px;

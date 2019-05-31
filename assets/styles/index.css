@@ -191,11 +191,17 @@ body {
 
 
 .item_link {
-    font-family: 'quicksand', sans-serif;
+    font-family: 'Cambay', sans-serif;
     font-size: 1.25em;
+    font-weight: 400;
     color: #fff;
     text-decoration: none;
-    text-shadow: -2px 2px 0px #000;
+    text-shadow: -1px 2px 2px #000;
+    transition: .6s;
+}
+
+.item_link:hover {
+    color: #e34e4e;
 }
 
 @media only screen and (max-width: 1440px) and (max-height: 1400px) {
@@ -277,10 +283,6 @@ body {
 
 
 @media only screen and (max-width: 570px) {
-   .logo_text {
-       z-index: -999;
-   }
-   
     .nav_list-items:first-child {
         margin-top: 45%;
         padding-right: 0px;
